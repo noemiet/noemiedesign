@@ -56,7 +56,8 @@ module.exports = function(grunt) {
         banner: '<%= banner %>'
       },
       js: {
-        src: '<%= jshint.files %>',
+        src: 'js/src/jquery-1.11.2.min.js',
+        'js/src/bootstrap.min.js',
         dest: '<%= dir.js %>/<%= pkg.name %>.js'
       },
     },
@@ -195,7 +196,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('default', [
     'notify',
-    'jshint',           // JShint
+    // 'jshint',           // JShint
     'concat:js',        // Concatenate main JS files
     'uglify',           // Minifiy concatenated JS file
     'sass:dev',         // Compile Sass with dev settings
@@ -209,7 +210,7 @@ module.exports = function(grunt) {
    * run `grunt production`
    */
   grunt.registerTask('production', [
-    'jshint',           // JShint
+    // 'jshint',           // JShint
     'concat:js',        // Concatenate main JS files
     'uglify',           // Minifiy concatenated JS file
     'sass:dist',        // Compile Sass with distribution settings
