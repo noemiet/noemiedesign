@@ -1,6 +1,6 @@
 /**
 Blank project for front end development - 0.1.0
-http://github.perkinswill.com
+https://github.com/noemiet/noemiedesign
 Copyright (c) 2016 Dylan Dechant
 License: MIT
 */
