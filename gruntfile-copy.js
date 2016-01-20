@@ -1,17 +1,3 @@
-Skip to content
-This repository  
-Search
-Pull requests
-Issues
-Gist
- @noemietshinanga
- Watch 5
-  Star 0
- Fork 0io/pattern-ui-styles-library
-Branch: master  pattern-ui-styles-library/Gruntfile.js
-@brendancecerebrendancecere 5 days ago Fixed grunttask to include pw-chips.js. Fixed textarea spacing. All f…
-2 contributors @noemietshinanga @brendancecere
-RawBlameHistory     556 lines (506 sloc)  16.5 KB
 module.exports = function(grunt) {
 
   // configure the tasks
