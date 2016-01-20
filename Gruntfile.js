@@ -129,14 +129,45 @@ module.exports = function(grunt) {
       }
     },
 
+//  Notifications
     notify: {
       watching: {
         options: {
           enabled: true,
           message: 'Watching Files!',
-          title: 'Boil', // defaults to the name in package.json, or will use project directory's name
+          title: "Noemie Design", // defaults to the name in package.json, or will use project directory's name
           success: true, // whether successful grunt executions should be notified automatically
-          duration: 1, // the duration of notification in seconds, for `notify-send only
+          duration: 1 // the duration of notification in seconds, for `notify-send only
+        }
+      },
+
+      sass_compile: {
+        options: {
+          enabled: true,
+          message: 'Sass Compiled!',
+          title: "Noemie Design",
+          success: true,
+          duration: 1
+        }
+      },
+
+      js_compile: {
+        options: {
+          enabled: true,
+          message: 'JS Compiled!',
+          title: "Noemie Design",
+          success: true,
+          duration: 1
+        }
+      },
+
+      jade_compile: {
+        options: {
+          enabled: true,
+          message: 'Jade Compiled!',
+          title: "Noemie Design",
+          success: true,
+          duration: 1
         }
       },
 
@@ -144,7 +175,7 @@ module.exports = function(grunt) {
         options: {
           enabled: true,
           message: 'Server Running!',
-          title: 'Materialize',
+          title: "Noemie Design",
           success: true,
           duration: 1
         }
@@ -235,4 +266,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jade');ß
 };
