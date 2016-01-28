@@ -33,61 +33,74 @@ module.exports = function(grunt) {
     },
 
 
-
-
     /**
-     * Concatenate
-     * @github.com/gruntjs/grunt-contrib-concat
+     * JSHint
+     * @github.com/gruntjs/grunt-contrib-jshint
      */
+    jshint: {
+      gruntfile: 'Gruntfile.js',
+      files: ['<%= dir.js %>/src/**/*.js'],
+      options: {
+        jshintrc: '.jshintrc'
+      }
+    },
+
+
+//  Concat
     concat: {
       options: {
-        stripBanners: true,
-        banner: '<%= banner %>'
+        separator: ';'
       },
-      js: {
+      dist: {
         // the files to concatenate
         src: [
               "js/src/bootstrap.min.js",
+              "js/src/jquery-1.11.2.min.js",
+              "js/src/flexslider.js",
+              "js/src/imagesloaded.min.js",
+              "js/src/jquery.isotope.js",
               "js/src/main-1.js",
               "js/src/masonry.js",
-              "js/src/jquery.flexslider.js",
-              "js/src/jquery.isotope.js",
-              "js/src/jquery.imagesloaded.min.js",
-
+              "js/src/masonry.pkgd.min.js",
+              "js/src/salvattore.js",
              ],
         // the location of the resulting JS file
         dest: 'js/global.js'
       },
-    },
 
 
-    /**
-     * Sass compiling
-     * @github.com/gruntjs/grunt-contrib-sass
-     */
-    sass: {
-
-      // Development options
-      dev: {
+//  Sass
+  sass: {
+    expanded: {
         options: {
           style: 'expanded',
           sourcemap: 'none',
         },
         files: {
-          'css/global.css': 'sass/global.scss'
+          'css/global.css': 'sass/global.scss',
         }
       },
 
-      // Distribution options
-      dist: {
-        options: {
-          style: 'compressed'
-        },
-        files: {
-          '<%= dir.css %>/<%= pkg.name %>.css': '<%= dir.sass %>/global.scss'
-        }
-      }
-    },
+    // pwdist: {
+    //   options: {
+    //     style: 'compressed',
+    //     sourcemap: 'none',
+    //   },
+    //   files: {
+    //     'dist/css/pw-styles.min.css': 'sass/pw-style/pwstyle.scss',
+    //   }
+    // },
+
+    // pw: {
+    //     options: {
+    //       style: 'compressed',
+    //       sourcemap: 'none',
+    //     },
+    //     files: {
+    //       'css/pwstyle.min.css': 'sass/pw-style/pwstyle.scss',
+    //     }
+    //   }
+    // },
 
 
     /**
@@ -185,6 +198,11 @@ module.exports = function(grunt) {
      */
     watch: {
 
+      // JShint Gruntfile
+      gruntfile: {
+        files: 'Gruntfile.js',
+        tasks: ['jshint:gruntfile'],
+      },
 
       // Compile Sass dev on change
       sass: {
@@ -192,7 +210,11 @@ module.exports = function(grunt) {
         tasks: ['sass:dev'],
       },
 
-
+      // JShint, concat + uglify JS on change
+      js: {
+        files: '<%= jshint.files %>',
+        tasks: ['jshint', 'concat', 'uglify']
+      },
 
       // Live reload files
       livereload: {
@@ -214,6 +236,7 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('default', [
     'notify',
+    // 'jshint',           // JShint
     'concat:js',        // Concatenate main JS files
     'uglify',           // Minifiy concatenated JS file
     'sass:dev',         // Compile Sass with dev settings
@@ -227,6 +250,7 @@ module.exports = function(grunt) {
    * run `grunt production`
    */
   grunt.registerTask('production', [
+    // 'jshint',           // JShint
     'concat:js',        // Concatenate main JS files
     'uglify',           // Minifiy concatenated JS file
     'sass:dist',        // Compile Sass with distribution settings
@@ -251,4 +275,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jade');ß
 };

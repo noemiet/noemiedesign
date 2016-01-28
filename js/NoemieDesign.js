@@ -1,7 +1,7 @@
 /**
-Blank project for front end development - 0.1.0
+Designs - 0.1.0
 https://github.com/noemiet/noemiedesign
-Copyright (c) 2016 Dylan Dechant
+Copyright (c) 2016 Noemie Tshinanga
 License: MIT
 */
 // another-script.js for demonstrating file conactenation
