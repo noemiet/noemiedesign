@@ -144,12 +144,12 @@ p {
 }
 /* HEADER SECTION */
 #header{
-	background-image: url(../img/main3.jpg); 
+/*	background-image: url(../img/main3.jpg); 
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-	
+	*/
 
 	background-color: #fff;
 	padding-bottom: 190px;
@@ -255,9 +255,9 @@ p {
     width: 93%;
     height: 100%;
     text-align: center;
-    color: #fff;
+    color: #000;
     opacity: 0;
-    background: rgba(0,0,0,.9);
+    background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -290,7 +290,7 @@ p {
 }
 
 .portfolio-box-caption:hover {
-	    display: block;
+	display: block;
     height: 100%;
     width: 100%;
     position: absolute;
