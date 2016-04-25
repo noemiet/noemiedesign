@@ -66,7 +66,6 @@ module.exports = function(grunt) {
      * @github.com/gruntjs/grunt-contrib-sass
      */
     sass: {
-
       // Development options
       dev: {
         options: {
@@ -85,6 +84,22 @@ module.exports = function(grunt) {
         },
         files: {
           '<%= dir.css %>/<%= pkg.name %>.css': '<%= dir.sass %>/global.scss'
+        }
+      }
+    },
+
+    //  Jade
+    jade: {
+      compile: {
+        options: {
+          pretty: true,
+          data: {
+            debug: false
+          }
+        },
+        files: {
+          "index.html": "jade/index.jade",
+
         }
       }
     },
@@ -178,19 +193,33 @@ module.exports = function(grunt) {
       }
     },
 
+//  Jade
+    jade: {
+      compile: {
+        options: {
+          pretty: true,
+          data: {
+            debug: false
+          }
+        },
+        files: {
+          "index.html": "jade/index.jade",
+
+        }
+      }
+    },
 
     /**
      * Watch
      * @github.com/gruntjs/grunt-contrib-watch
      */
     watch: {
-
-
       // Compile Sass dev on change
       sass: {
         files: '<%= dir.sass %>/**/*',
         tasks: ['sass:dev'],
       },
+
 
 
 
@@ -207,6 +236,18 @@ module.exports = function(grunt) {
     }
   });
 
+  /**
+   * Load the plugins specified in `package.json`
+   */
+  grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-notify');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   /**
    * Default Task
@@ -237,18 +278,6 @@ module.exports = function(grunt) {
     'notify:server',
   ]);
 
-
-
-  /**
-   * Load the plugins specified in `package.json`
-   */
-  grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-notify');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-watch');
 };
+
+
