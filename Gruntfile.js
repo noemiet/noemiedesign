@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-
   /**
    * Initialize grunt
    */
@@ -21,6 +20,9 @@ module.exports = function(grunt) {
     'License: <%= pkg.license %>\n' +
     '*/\n',
 
+    // jshint: {
+    //         all: ['Gruntfile.js']
+    //     },
 
     /**
      * Set directory paths
@@ -32,8 +34,40 @@ module.exports = function(grunt) {
       img: 'img'
     },
 
+    /**
+     * Sass compiling
+     * @github.com/gruntjs/grunt-contrib-sass
+     */
+    sass: {
+      // Development options
+      dev: {
+        options: {
+          style: 'expanded',
+          sourcemap: 'none',
+        },
+        files: {
+          'css/global.css': 'sass/global.scss',
+        }
+      }
+    },
 
-
+      // Browser Sync integration
+    browserSync: {
+      bsFiles: ['js/*.js', 'css/*.css', '!**/node_modules/**/*', './*.html'],
+      options: {
+          server: {
+              baseDir: './' // make server from root dir
+          },
+          port: 8000,
+          ui: {
+              port: 8080,
+              weinre: {
+                  port: 9090
+              }
+          },
+          open: false
+      }
+    },
 
     /**
      * Concatenate
@@ -53,38 +87,26 @@ module.exports = function(grunt) {
               "js/src/jquery.flexslider.js",
               "js/src/jquery.isotope.js",
               "js/src/jquery.imagesloaded.min.js",
-
              ],
         // the location of the resulting JS file
         dest: 'js/global.js'
       },
     },
 
-
     /**
-     * Sass compiling
-     * @github.com/gruntjs/grunt-contrib-sass
+     * Uglify
+     * @github.com/gruntjs/grunt-contrib-uglify
      */
-    sass: {
-      // Development options
-      dev: {
-        options: {
-          style: 'expanded',
-          sourcemap: 'none',
-        },
-        files: {
-          'css/global.css': 'sass/global.scss'
-        }
+    uglify: {
+      // Uglify options
+      options: {
+        banner: '<%= banner %>'
       },
 
-      // Distribution options
+      // Minify js files in js/src/
       dist: {
-        options: {
-          style: 'compressed'
-        },
-        files: {
-          '<%= dir.css %>/<%= pkg.name %>.css': '<%= dir.sass %>/global.scss'
-        }
+        src: ['<%= concat.js.dest %>'],
+        dest: '<%= dir.js %>/<%= pkg.name %>.min.js'
       }
     },
 
@@ -99,46 +121,54 @@ module.exports = function(grunt) {
         },
         files: {
           "index.html": "jade/index.jade",
-
         }
       }
     },
 
-
-    /**
-     * Minify
-     * @github.com/gruntjs/grunt-contrib-uglify
+      /**
+     * Watch
+     * @github.com/gruntjs/grunt-contrib-watch
      */
-    uglify: {
-
-      // Uglify options
-      options: {
-        banner: '<%= banner %>'
+    watch: {
+      jade: {
+        files: ['jade/**/*'],
+        tasks: ['jade_compile'],
+        options: {
+          interrupt: false,
+          spawn: false,
+        },
       },
 
-      // Minify js files in js/src/
-      dist: {
-        src: ['<%= concat.js.dest %>'],
-        dest: '<%= dir.js %>/<%= pkg.name %>.min.js'
+      js: {
+        files: [ "js/**/*", "!js/init.js"],
+        tasks: ['js_compile'],
+        options: {
+          interrupt: false,
+          spawn: false,
+        },
       },
-    },
 
-    browserSync: {
-      bsFiles: ['js/*.js', 'css/*.css', '!**/node_modules/**/*', './*.html'],
-      options: {
-          server: {
-              baseDir: './' // make server from root dir
-          },
-          port: 8000,
-          ui: {
-              port: 8080,
-              weinre: {
-                  port: 9090
-              }
-          },
-          open: false
+      sass: {
+        files: ['sass/**/*'],
+        tasks: ['sass_compile'],
+        options: {
+          interrupt: false,
+          spawn: false,
+        },
       }
     },
+
+    //  Concurrent
+    concurrent: {
+      options: {
+        logConcurrentOutput: true,
+        limit: 10,
+      },
+      monitor: {
+        tasks: ["watch:jade", "watch:js", "watch:sass", "notify:watching", 'server']
+      },
+    },
+
 
 //  Notifications
     notify: {
@@ -193,35 +223,6 @@ module.exports = function(grunt) {
       }
     },
 
-//  Jade
-    jade: {
-      compile: {
-        options: {
-          pretty: true,
-          data: {
-            debug: false
-          }
-        },
-        files: {
-          "index.html": "jade/index.jade",
-
-        }
-      }
-    },
-
-    /**
-     * Watch
-     * @github.com/gruntjs/grunt-contrib-watch
-     */
-    watch: {
-      // Compile Sass dev on change
-      sass: {
-        files: '<%= dir.sass %>/**/*',
-        tasks: ['sass:dev'],
-      },
-
-
-
 
       // Live reload files
       livereload: {
@@ -233,7 +234,8 @@ module.exports = function(grunt) {
           '<%= dir.img %>/**/*.{png,jpg,jpeg,gif,svg}'  // img files in img/ dir
         ]
       }
-    }
+    
+    
   });
 
   /**
@@ -241,6 +243,7 @@ module.exports = function(grunt) {
    */
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-notify');
@@ -248,6 +251,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-concurrent');
 
   /**
    * Default Task
@@ -255,11 +259,12 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('default', [
     'notify',
-    'concat:js',        // Concatenate main JS files
-    'uglify',           // Minifiy concatenated JS file
-    'sass:dev',         // Compile Sass with dev settings
+    'concat:js',        
+    'uglify',           
+    'sass:dev',         
     'browserSync',
     'watch',
+    'concurrent:monitor'
   ]);
 
 
@@ -267,17 +272,11 @@ module.exports = function(grunt) {
    * Production tast, use for deploying
    * run `grunt production`
    */
-  grunt.registerTask('production', [
-    'concat:js',        // Concatenate main JS files
-    'uglify',           // Minifiy concatenated JS file
-    'sass:dist',        // Compile Sass with distribution settings
-  ]);
-
-  grunt.registerTask('server', [
-    'browserSync',
-    'notify:server',
-  ]);
-
+  grunt.registerTask('production', ['concat:js', 'uglify', 'sass:dist']);
+  grunt.registerTask('jade_compile', ['jade', 'notify:jade_compile']);
+  grunt.registerTask('js_compile', ['concat:temp', 'concat:pw', 'notify:js_compile', 'clean:temp']);
+  grunt.registerTask('sass_compile',['sass:dev', 'notify:sass_compile']);
+  grunt.registerTask('server', ['browserSync','notify:server']);
 };
 
 
