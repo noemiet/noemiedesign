@@ -84,9 +84,11 @@ module.exports = function(grunt) {
               "js/src/bootstrap.min.js",
               "js/src/main-1.js",
               "js/src/masonry.js",
+              "js/src/masonry.pkgd.min.js",
               "js/src/jquery.flexslider.js",
               "js/src/jquery.isotope.js",
               "js/src/jquery.imagesloaded.min.js",
+              "js/src/sidebar_menu.js",
              ],
         // the location of the resulting JS file
         dest: 'js/global.js'

@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/png" href="http://noemietshinanga.com/favicon.ico">
+    <link rel="icon" type="image/png" href="img/nt-favicon.ico">
     <!-- Basic page information -->
     <!-- Custom Google fonts-->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
@@ -15,8 +15,28 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <!--Main CSS Style-->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
   </head>
-  <body><div id="header">
+  <body>
+    <div class="sidebar-wrapper">
+      <ul id="menu" class="sidebar-nav nav-pills nav-stacked">
+        <li class="active"><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x">Dashboard
+                <ul class="nav-pills nav-stacked">
+                  <li><a href="#">link1</a></li>
+                  <li><a href="#">link2</a></li>
+                </ul></i></span></a></li>
+        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x">Shortcut
+                <ul class="nav-pills nav-stacked">
+                  <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x">link1</i></span></a></li>
+                  <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x">link2      </i></span></a></li>
+                </ul></i></span></a></li>
+        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x">Overview</i></span></a></li>
+        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cart-plus fa-stack-1x">Event</i></span></a></li>
+        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-youtube-play fa-stack-1x">About</i></span></a></li>
+        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x">Services</i></span></a></li>
+        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-server fa-stack-1x">Contact</i></span></a></li>
+      </ul>
+    </div><div id="header">
       <nav id="mainNav" class="navbar navbar-default navbar-static-top">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -163,23 +183,19 @@
             </div>
           </div>
       </div>
-    </div>    <!-- JS libraries and scripts -->
-    <script src="js/src/jquery-1.11.2.min.js"></script> 
-    <script src="js/src/bootstrap.min.js"></script>
-    <script src="js/src/jquery.flexslider.js"></script>
-    <script src="js/src/jquery.imagesloaded.min.js"></script>
-    <script src="js/src/main-1.js"></script>
-    <script src="js/src/masonry.pkgd.min.js"></script>
+    </div>  <!-- JS libraries and scripts -->
+  <script src="js/src/jquery-1.11.2.min.js"></script> 
+  <script src="js/src/global.js"></script>
 
-    <script type="text/javascript" charset="utf-8">
-      $(window).load(function(){
-        $('#words').flexslider({
-          controlNav: false,  
-          slideshowSpeed: 2500,         
-          animationSpeed: 600, 
+  <script type="text/javascript" charset="utf-8">
+    $(window).load(function(){
+      $('#words').flexslider({
+        controlNav: false,  
+        slideshowSpeed: 2500,         
+        animationSpeed: 600, 
 
-        });
       });
-    </script>
+    });
+  </script>
   </body>
 </html>
