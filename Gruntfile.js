@@ -27,12 +27,12 @@ module.exports = function(grunt) {
     /**
      * Set directory paths
      */
-    dir: {
-      js: 'js',
-      css: 'css',
-      sass: 'css/sass',
-      img: 'img'
-    },
+    // dir: {
+    //   js: 'js',
+    //   css: 'css',
+    //   sass: 'css/sass',
+    //   img: 'img'
+    // },
 
     /**
      * Sass compiling
@@ -243,6 +243,7 @@ module.exports = function(grunt) {
   /**
    * Load the plugins specified in `package.json`
    */
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-jade');
@@ -252,33 +253,25 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-concurrent');
 
   /**
    * Default Task
    * run `grunt`
    */
-  grunt.registerTask('default', [
-    'notify',
-    'concat:js',        
-    'uglify',           
-    'sass:dev',         
-    'browserSync',
-    'watch',
-    'concurrent:monitor'
-  ]);
+ 
 
-
+  grunt.registerTask('jade_compile', ['jade', 'notify:jade_compile']);
+  grunt.registerTask('js_compile', ['concat:js', 'notify:js_compile', 'clean:temp']);
+  grunt.registerTask('sass_compile',['sass:dev', 'notify:sass_compile']);
+  grunt.registerTask('server', ['browserSync','notify:server']);
   /**
    * Production tast, use for deploying
    * run `grunt production`
    */
-  grunt.registerTask('production', ['concat:js', 'uglify', 'sass:dist']);
-  grunt.registerTask('jade_compile', ['jade', 'notify:jade_compile']);
-  grunt.registerTask('js_compile', ['concat:temp', 'concat:pw', 'notify:js_compile', 'clean:temp']);
-  grunt.registerTask('sass_compile',['sass:dev', 'notify:sass_compile']);
-  grunt.registerTask('server', ['browserSync','notify:server']);
+  // grunt.registerTask('production', ['concat:js', 'uglify', 'sass:dist']);
+ 
+  grunt.registerTask('default', ['concurrent:monitor']);
 };
 
 

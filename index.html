@@ -18,84 +18,19 @@
     <link href="css/global.css" rel="stylesheet">
   </head>
   <body>
-    <div class="sidebar-wrapper">
-      <ul id="menu" class="sidebar-nav nav-pills nav-stacked">
-        <li class="active"><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x">Dashboard
-                <ul class="nav-pills nav-stacked">
-                  <li><a href="#">link1</a></li>
-                  <li><a href="#">link2</a></li>
-                </ul></i></span></a></li>
-        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x">Shortcut
-                <ul class="nav-pills nav-stacked">
-                  <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x">link1</i></span></a></li>
-                  <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x">link2      </i></span></a></li>
-                </ul></i></span></a></li>
-        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x">Overview</i></span></a></li>
-        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cart-plus fa-stack-1x">Event</i></span></a></li>
-        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-youtube-play fa-stack-1x">About</i></span></a></li>
-        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x">Services</i></span></a></li>
-        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-server fa-stack-1x">Contact</i></span></a></li>
-      </ul>
-    </div><div id="header">
-      <nav id="mainNav" class="navbar navbar-default navbar-static-top">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <!-- <a class="navbar-brand page-scroll" href="#page-top" id="logo">noemie tshinanga</a> -->
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a class="page-scroll" href="#about">Work</a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#services">About</a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#portfolio">Blog</a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-      </nav>
-
-      <div id="h">
-        <div class="container">
-          <div class="row">
-            <div class="content">
-              <div class="col-md-12">
-                <h1>Noemie Tshinanga</h1>
-                <div id="words">
-                <h3>i like to make things</h3>
-<!--                  <ul class="slides">
-                    <li><h3>design</h3></li>
-                    <li><h3>development</h3></li>
-                    <li><h3>creative</h3></li>
-                    <li><h3>uncomfortable</h3></li> 
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div><!--/row-->
-        </div><!--/container-->
-      </div><!--H-->
-    </div>
-
-
-    <div>
+    <div id="wrapper">
+      <div id="sidebar-wrapper">
+        <ul id="menu" class="sidebar-nav nav-pills nav-stacked">
+          <li class="active"><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-dashboard fa-stack-1x">Dashboard</i></li>
+          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-flag fa-stack-1x">Shortcut   </i></li>
+          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-cloud-download fa-stack-1x">Overview</i></li>
+          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-cart-plus fa-stack-1x">Event</i></li>
+          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-youtube-play fa-stack-1x">About</i></li>
+          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-wrench fa-stack-1x">Services</i></li>
+          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-server fa-stack-1x">Contact</i></li>
+        </ul>
+      </div>
+    </div>    <div>
 
       <div class="masonry-container">
         <div class="grid-sizer"></div>
@@ -183,19 +118,22 @@
             </div>
           </div>
       </div>
-    </div>  <!-- JS libraries and scripts -->
-  <script src="js/src/jquery-1.11.2.min.js"></script> 
-  <script src="js/src/global.js"></script>
+    </div>    <!-- JS libraries and scripts -->
+    <script src="js/src/jquery-1.11.2.min.js"></script> 
+    <script src="js/src/jquery.flexslider.js"></script>
+    <script src="js/src/jquery.imagesloaded.min.js"></script>
+    <script src="js/src/main-1.js"></script>
+    <script src="js/src/masonry.pkgd.min.js"></script>
 
-  <script type="text/javascript" charset="utf-8">
-    $(window).load(function(){
-      $('#words').flexslider({
-        controlNav: false,  
-        slideshowSpeed: 2500,         
-        animationSpeed: 600, 
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function(){
+        $('#words').flexslider({
+          controlNav: false,  
+          slideshowSpeed: 2500,         
+          animationSpeed: 600, 
 
+        });
       });
-    });
-  </script>
+    </script>
   </body>
 </html>
