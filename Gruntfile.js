@@ -124,6 +124,8 @@ module.exports = function(grunt) {
         },
         files: {
           "index.html": "jade/index.jade",
+          "work.html": "jade/work.jade",
+          "bene.html": "jade/bene.jade",
         }
       }
     },

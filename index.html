@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="full">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
     <!-- Custom Google fonts-->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
     <!-- Bootstrap CSS Style-->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -19,104 +19,16 @@
     <!--jquery-->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.rawgit.com/AndreaLombardo/BootSideMenu/master/js/BootSideMenu.js"></script>
+    <script src="js/src/bootsidemenu.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $('#test').BootSideMenu({side:"left", autoClose:false});
+        $('#test').BootSideMenu({side:"left", autoClose:true});
       });
     </script>
   </head>
   <body>
     <div id="test">
-      <div class="list-group"><a href="#" class="list-group-item active">Cras justo odio</a><a href="#" class="list-group-item">Dapibus ac facilisis in</a><a href="#" class="list-group-item">Morbi leo risus</a><a href="#" class="list-group-item">Morbi leo risus</a><a href="#" class="list-group-item">Porta ac consectetur ac</a></div>
-    </div>    <div>
-
-      <div class="masonry-container">
-        <div class="grid-sizer"></div>
-
-          <div class="col-md-4 item">
-            <img src="img/bene/main-two.jpg" class="img-responsive">
-            <div class="portfolio-box-caption hvr-shrink">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category">
-                  Bene Scarves
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 item">
-            <img src="img/home/rpj.jpg" class="img-responsive">
-            <div class="portfolio-box-caption hvr-shrink">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category">
-                  Reach Campaign
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-4 item">
-            <img src="img/home/final.jpg" class="img-responsive">
-            <div class="portfolio-box-caption hvr-shrink">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category">
-                  The Experiment
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4 item">
-            <img src="img/home/flyer.jpg" class="img-responsive">
-            <div class="portfolio-box-caption hvr-shrink">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category">
-                  Poster
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 item">
-            <img src="img/home/grady.jpg" class="img-responsive">
-            <div class="portfolio-box-caption hvr-shrink">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category">
-                  Grady Centennial
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 item">
-            <img src="img/home/shirt.jpg" class="img-responsive">
-            <div class="portfolio-box-caption hvr-shrink">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category">
-                  Apparel Design
-                </div>
-                <div class="project-name">  
-                  Logo
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 item">
-            <img src="img/home/chill.jpg" class="img-responsive">
-            <div class="portfolio-box-caption hvr-shrink">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category">
-                  Chill Out App
-                </div>
-                <div class="project-name">
-                  Mobile, Web
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
+      <div class="list-group"><a href="#" class="list-group-item menu-item">Home</a><a href="/work.html" class="list-group-item menu-item">Work</a><a href="#" class="list-group-item menu-item">About Me</a><a href="#" class="list-group-item menu-item">Photography</a><a href="#" class="list-group-item menu-item">Contact Me</a></div>
     </div>    <!-- JS libraries and scripts -->
   <!--   <script src="js/src/jquery-1.11.2.min.js"></script>  -->
     <script src="js/src/jquery.flexslider.js"></script>

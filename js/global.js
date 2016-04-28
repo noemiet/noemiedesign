@@ -1476,7 +1476,8 @@ $("#menu-toggle").click(function(e) {
     newCode += "  <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg1-12\" data-side=\""+side+"\">\n"+ oldCode+" </div>\n";
     newCode += "</div>";
     newCode += "<div class=\"toggler\">\n";
-    newCode += "  <span class=\"glyphicon glyphicon-chevron-right\">&nbsp;</span> <span class=\"glyphicon glyphicon-chevron-left\">&nbsp;</span>\n";
+    // newCode += "  <span class=\"glyphicon glyphicon-chevron-right\">&nbsp;</span> <span class=\"glyphicon glyphicon-chevron-left\">&nbsp;</span>\n";
+    newCode += "  <p id=\"label\">Noemie Tshinanga</p> <span class=\"move-right\">>>></span><span class=\"move-left\"><<<</span>\n";
     newCode += "</div>\n";
 
     //Mod suggested by asingh3
@@ -1621,11 +1622,11 @@ function doAnimation(container, containerWidth, sidebarSide, sidebarStatus){
 
 function toggleArrow(toggler, side){
   if(side=="left"){
-    $(toggler).children(".glyphicon-chevron-right").css('display', 'block');
-    $(toggler).children(".glyphicon-chevron-left").css('display', 'none');
+    $(toggler).children(".move-right").css('display', 'block');
+    $(toggler).children(".move-left").css('display', 'none');
   }else if(side=="right"){
-    $(toggler).children(".glyphicon-chevron-left").css('display', 'block');
-    $(toggler).children(".glyphicon-chevron-right").css('display', 'none');
+    $(toggler).children(".move-left").css('display', 'block');
+    $(toggler).children(".move-right").css('display', 'none');
   }
 }
 
