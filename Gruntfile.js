@@ -89,6 +89,7 @@ module.exports = function(grunt) {
               "js/src/jquery.isotope.js",
               "js/src/jquery.imagesloaded.min.js",
               "js/src/sidebar_menu.js",
+              "js/src/bootsidemenu.js",
              ],
         // the location of the resulting JS file
         dest: 'js/global.js'
@@ -262,7 +263,7 @@ module.exports = function(grunt) {
  
 
   grunt.registerTask('jade_compile', ['jade', 'notify:jade_compile']);
-  grunt.registerTask('js_compile', ['concat:js', 'notify:js_compile', 'clean:temp']);
+  grunt.registerTask('js_compile', ['concat:js', 'notify:js_compile']);
   grunt.registerTask('sass_compile',['sass:dev', 'notify:sass_compile']);
   grunt.registerTask('server', ['browserSync','notify:server']);
   /**

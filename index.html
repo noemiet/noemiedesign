@@ -16,20 +16,19 @@
     <!--Main CSS Style-->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet">
+    <!--jquery-->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/AndreaLombardo/BootSideMenu/master/js/BootSideMenu.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#test').BootSideMenu({side:"left", autoClose:false});
+      });
+    </script>
   </head>
   <body>
-    <div id="wrapper">
-      <div id="sidebar-wrapper">
-        <ul id="menu" class="sidebar-nav nav-pills nav-stacked">
-          <li class="active"><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-dashboard fa-stack-1x">Dashboard</i></li>
-          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-flag fa-stack-1x">Shortcut   </i></li>
-          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-cloud-download fa-stack-1x">Overview</i></li>
-          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-cart-plus fa-stack-1x">Event</i></li>
-          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-youtube-play fa-stack-1x">About</i></li>
-          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-wrench fa-stack-1x">Services</i></li>
-          <li><a href="#"></a><span class="fa-stack fa-lg pull-left"></span><i class="fa fa-server fa-stack-1x">Contact</i></li>
-        </ul>
-      </div>
+    <div id="test">
+      <div class="list-group"><a href="#" class="list-group-item active">Cras justo odio</a><a href="#" class="list-group-item">Dapibus ac facilisis in</a><a href="#" class="list-group-item">Morbi leo risus</a><a href="#" class="list-group-item">Morbi leo risus</a><a href="#" class="list-group-item">Porta ac consectetur ac</a></div>
     </div>    <div>
 
       <div class="masonry-container">
@@ -119,11 +118,12 @@
           </div>
       </div>
     </div>    <!-- JS libraries and scripts -->
-    <script src="js/src/jquery-1.11.2.min.js"></script> 
+  <!--   <script src="js/src/jquery-1.11.2.min.js"></script>  -->
     <script src="js/src/jquery.flexslider.js"></script>
     <script src="js/src/jquery.imagesloaded.min.js"></script>
     <script src="js/src/main-1.js"></script>
     <script src="js/src/masonry.pkgd.min.js"></script>
+
 
     <script type="text/javascript" charset="utf-8">
       $(window).load(function(){
