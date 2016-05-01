@@ -126,6 +126,14 @@ module.exports = function(grunt) {
           "index.html": "jade/index.jade",
           "work.html": "jade/work.jade",
           "bene.html": "jade/bene.jade",
+          "perkins.html": "jade/perkins.jade",
+          "reach.html": "jade/reach.jade",
+          "chill.html": "jade/chill.jade",
+          "grady.html": "jade/grady.jade",
+          "experiment.html": "jade/experiment.jade",
+          "poster.html": "jade/poster.jade",
+          "morning.html": "jade/morning.jade",
+          "shirt.html": "jade/shirt.jade",
         }
       }
     },

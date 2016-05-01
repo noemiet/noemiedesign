@@ -1,4 +1,8 @@
 .full {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
   background: url(../img/home.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7,9 +11,121 @@
 }
 
 .full-bene {
-  background: url(../img/bene/main2.jpg) no-repeat center center fixed; 
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bene/main2.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  -o-background-size: cover;
+}
+
+.full-rpj {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/rpj/rpj-main.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.full-perkins {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/pw/pw-main.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.full-shirt {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/shirts/shirts-main.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.full-chill {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/chill/chill-main.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.full-hack {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/hack/main2.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.full-exp {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/experiment/exp-main.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.full-tma {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/tma/tma-main.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.full-grady {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/grady/grady-main.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.full-poster {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/poster/post-main2.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
