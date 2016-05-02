@@ -45,7 +45,7 @@ p {
 	margin-top: 10px; 
 }
 
-.centered{
+.center{
 	text-align: center;
 }
 
@@ -558,6 +558,9 @@ p {
 
 /*BUTTTON STYLES END HERE- Tympanus button styles */
 
+/*.grid-sizer { width: 20%; }
+.item { width: 25%; }*/
+
 .grid-sizer { width: 20%; }
 .item { width: 25%; }
 
@@ -590,4 +593,18 @@ p {
 
 section{
   margin-top: 60px;
+  margin-bottom: 100px;
 }
+
+.pn{
+  padding: 0px !important;
+}
+
+/*.overlay {
+  z-index: 9999;
+  opacity: .2;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+}
+*/
