@@ -599,3 +599,12 @@ section{
 .pn{
   padding: 0px !important;
 }
+
+/*.overlay {
+  z-index: 9999;
+  opacity: .2;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+}
+*/
