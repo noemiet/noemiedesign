@@ -260,9 +260,9 @@ p {
     width: 93%;
     height: 100%;
     text-align: center;
-    color: #000;
+    color: #fff;
     opacity: 0;
-    background-color: #fff;
+    background-color: #000;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -561,8 +561,8 @@ p {
 /*.grid-sizer { width: 20%; }
 .item { width: 25%; }*/
 
-.grid-sizer { width: 20%; }
-.item { width: 25%; }
+.grid-sizer { width: 50%; }
+.item { width: 50%; }
 
 @media screen and (max-width: 1224px) {
   .grid-sizer { width: 33.33%; }

@@ -134,6 +134,7 @@ module.exports = function(grunt) {
           "poster.html": "jade/poster.jade",
           "morning.html": "jade/morning.jade",
           "shirt.html": "jade/shirt.jade",
+          "blue.html": "jade/blue.jade",
         }
       }
     },

@@ -11,10 +11,29 @@ h2{
   line-height: 3rem;
 }
 
+.alt-title{
+  font-size: 4rem;
+}
+
 .tags{
   font-style: italic;
 }
 
 p{
   color: #6D6E71;
+}
+
+.back{
+  h1{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  }
+  a{
+  color: #555;
+
+  &:hover{
+    color: #C7CECB !important;
+    text-decoration: none !important;
+  }
+}
 }
