@@ -12,8 +12,10 @@ html, body {
 body { 
 	margin: 0; 
 }
-.pl{
+main{
   padding-left: 50px;
+      width: 100%;
+    height: 100%;
 }
 
 /*h1, h2 {
