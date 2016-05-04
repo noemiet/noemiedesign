@@ -221,3 +221,20 @@ a.list-group-item:hover{
   text-decoration: none !important;
    background-color: #fff;
 }
+
+.sidebar .list-group > a{
+  border: none;
+  padding: 1px 15px;
+  font-family: Oswald,sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #555;
+  position: relative;
+  display: block;
+}
+
+.sidebar .list-group > a:hover{
+    color: #C7CECB !important;
+    text-decoration: none !important;
+    background-color: #fff;
+  }

@@ -260,9 +260,9 @@ p {
     width: 93%;
     height: 100%;
     text-align: center;
-    color: #000;
+    color: #fff;
     opacity: 0;
-    background-color: #fff;
+    background-color: #000;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
