@@ -22,3 +22,18 @@ h2{
 p{
   color: #6D6E71;
 }
+
+.back{
+  h1{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  }
+  a{
+  color: #555;
+
+  &:hover{
+    color: #C7CECB !important;
+    text-decoration: none !important;
+  }
+}
+}

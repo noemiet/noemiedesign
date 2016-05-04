@@ -561,8 +561,8 @@ p {
 /*.grid-sizer { width: 20%; }
 .item { width: 25%; }*/
 
-.grid-sizer { width: 20%; }
-.item { width: 25%; }
+.grid-sizer { width: 50%; }
+.item { width: 50%; }
 
 @media screen and (max-width: 1224px) {
   .grid-sizer { width: 33.33%; }

@@ -59,7 +59,7 @@
       left:20px;
 }
 
-@media (min-width: 400px) {
+/*@media (min-width: 400px) {
 
 }
 @media (min-width: 528px) {
@@ -103,8 +103,8 @@
             right:0px;
             left:auto;
       }
-}
-@media (min-width: 1200px) {
+}*/
+@media (max-width: 1200px) {
       .sidebar {
             width: 230px;
       }
