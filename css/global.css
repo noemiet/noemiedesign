@@ -725,8 +725,9 @@ transform:scale(1.2);
   width: 33.33%;
 }
 
-.item--width2 {
-  width: 50%;
+.grid-sizer2,
+.item2 {
+  width: 25%;
 }
 
 @media screen and (max-width: 1224px) {
@@ -781,4 +782,10 @@ footer h4 {
 footer .icons {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.sub-footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  margin-bottom: 0;
 }
