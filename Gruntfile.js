@@ -82,8 +82,9 @@ module.exports = function(grunt) {
         // the files to concatenate
         src: [
               "js/src/bootstrap.min.js",
-              "js/src/main-1.js",
-              "js/src/masonry.js",
+              // "js/src/main-1.js",
+              // "js/src/masonry.js",
+              "js/src/mas-test.js",
               "js/src/masonry.pkgd.min.js",
               "js/src/jquery.flexslider.js",
               "js/src/jquery.isotope.js",

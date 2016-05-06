@@ -3,19 +3,20 @@ $(document).ready(function(){
     init_masonry();
 
 });
-
-
 function init_masonry(){
     var $container = $('.masonry-container');
 
     $container.imagesLoaded( function(){
         $container.masonry({
+          columnWidth: '.grid-sizer',
           itemSelector: '.item',
-					
+          percentPosition: true,
           isAnimated: true
         });
     });
 }
+
+
 
 // $(document).ready(function(){
 //     //Init jQuery Masonry layout

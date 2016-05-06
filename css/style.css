@@ -560,26 +560,7 @@ p {
 
 /*BUTTTON STYLES END HERE- Tympanus button styles */
 
-/*.grid-sizer { width: 20%; }
-.item { width: 25%; }*/
 
-.grid-sizer { width: 50%; }
-.item { width: 50%; }
-
-@media screen and (max-width: 1224px) {
-  .grid-sizer { width: 33.33%; }
-  .item { width: 33.33%; }
-}
-
-@media screen and (max-width: 720px) {
-  .grid-sizer { width: 50%; }
-  .item { width: 50%; }
-}
-
-@media screen and (max-width: 480px) {
-  .grid-sizer { width: 100%; }
-  .item { width: 100%; }
-}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
