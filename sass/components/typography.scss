@@ -7,7 +7,7 @@ h1{
 }
 h2{
   font-family: 'Rokkitt', serif;
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 3rem;
 }
 
@@ -16,7 +16,7 @@ h2{
 }
 
 .tags{
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
 p{
@@ -51,4 +51,10 @@ p{
   border-radius: .25em;
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+ul.tags{
+  list-style-type:none;
+  color: #000000;
+  font-size: 1.2rem;
 }
