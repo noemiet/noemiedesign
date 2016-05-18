@@ -454,7 +454,9 @@ p {
 	background: none;
 	color: inherit;
 	vertical-align: middle;
-	position: relative;
+	position: absolute;
+      left: 50%;
+    top: 50%;
 	z-index: 1;
 	-webkit-backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
