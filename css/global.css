@@ -810,6 +810,24 @@ footer .icons {
   background-color: #1d1d1d;
   color: #fff;
   margin-bottom: 0;
+  padding: 10px;
+}
+
+.pager li > a, .pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #1d1d1d;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-family: "Rokkitt", sans-serif;
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+.pager li > a:hover, .pager li > a:focus {
+  text-decoration: none;
+  color: #1d1d1d;
 }
 
 .info {
