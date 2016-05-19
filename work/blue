@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="img/nt-favicon.ico">
+    <base href="http://noemietshinanga.com/">
     <!-- Basic page information -->
     <meta name="description" content="Description">
     <meta name="keywords" content="noemie, tshinanga, design, atlanta">
@@ -35,37 +36,47 @@
   </head>
   <body>
     <div id="test">
-      <div class="list-group"><a href="index.html">Home</a><a href="work.html">Work</a><a href="#">About Me</a><a href="#">Photography</a><a href="#">Contact Me</a></div>
+      <div class="list-group"><a href="index">Home</a><a href="../working">Work</a><a href="#">About Me</a><a href="#">Photography</a><a href="#">Contact Me</a></div>
     </div>
-    <main class="alt-grid"><!-- HEADER -->
-<header class="full-exp">
-</header>
+    <main class="alt-grid"><div class='embed-container'><iframe src='https://player.vimeo.com/video/148023898?title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
 <section>
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <h2 class="alt-title">The Experiment</h2>
-        <span class="tags">Brand/Identity, Web Design, Email Marketing, Print Materials</span>
+        <h2 class="alt-title">The Journey of Blue</h2>
+          <span class="tags">Brand/Identity, Web Design, Photography, Videography</span>
       </div>
       <div class="col-md-8">
-        <p>One day, an idea came to me of expressing my thoughts through motion and audio. I was hesitant, but thought "Why not?". The next day, I shot about 30 minutes worth of footage and decided for the next five weeks that I was to create a mini series from those 30 minutes. My weekly task was to post a fifteen second video every Friday on Instagram, with each video created the week of posting. The overall plan was to strengthen my intuition and trust my vision. This is what came from it. Welcome to The Experiment.</p>
+        <p>Worked with Bene co-founder, Michelle Blue, to create a brand presence centered around her journey as an entreprenuer.</p>
       </div>
     </div>
   </div>
 </section>
 
-
+<div class="container-fluid pn">
+  <img src="/../img/blue/screen.jpg" class="img-responsive"> 
+</div>
 
 <div class="container-fluid pn">
+  <div class="col-sm-6">
+    <img src="/../img/blue/left.jpg" class="img-responsive">
+  </div>
+  <div class="col-sm-6">
+    <img src="/../img/blue/right.jpg" class="img-responsive">
+  </div>
+</div>
 
-      <img src="/../img/experiment/exp-main.jpg" class="img-responsive">
-
-</div><section class="sub-footer">
+<header class="full-blue">
+ <div class="center">
+    <a href="http://www.thejourneyofblue.com/" target="_blank"><button class="button button--winona button--border-thin button--round-s" data-text="Open Project"><span>Visit Site</span></button></a>
+      </div>
+</header>
+<section class="sub-footer">
   <ul class="pager">
-    <li class="previous"><a href="http://noemietshinanga.com/work/perkins"><<< Perkins+Will </a></li>
+    <li class="previous"><a href="http://noemietshinanga.com/work/experiment"><<< Experiment</a></li>
     <li><a href="http://noemietshinanga.com/work">View All</a></li>
-    <li class="next"><a href="http://noemietshinanga.com/work/blue">The Journey of Blue >>></a></li>
+    <li class="next"><a href="http://noemietshinanga.com/work/poster">Poster Design >>></a></li>
   </ul>
 </section>    <!-- JS libraries and scripts -->
   <!--   <script src="js/src/jquery-1.11.2.min.js"></script>  -->
