@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="img/nt-favicon.ico">
-    <base href="http://noemietshinanga.com/">
+    <base href="http://noemietshinanga.com/work/">
     <!-- Basic page information -->
     <meta name="description" content="Description">
     <meta name="keywords" content="noemie, tshinanga, design, atlanta">
@@ -36,7 +36,7 @@
   </head>
   <body>
     <div id="test">
-      <div class="list-group"><a href="index">Home</a><a href="../working">Work</a><a href="#">About Me</a><a href="#">Photography</a><a href="#">Contact Me</a></div>
+      <div class="list-group"><a href="index">Home</a><a href="../projects">Work</a><a href="#">About Me</a><a href="#">Photography</a><a href="#">Contact Me</a></div>
     </div>
     <main class="alt-grid"><div class="masonry-container">
   <div class="grid-sizer"></div>

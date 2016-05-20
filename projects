@@ -37,29 +37,131 @@
     <div id="test">
       <div class="list-group"><a href="index">Home</a><a href="../projects">Work</a><a href="#">About Me</a><a href="#">Photography</a><a href="#">Contact Me</a></div>
     </div>
-    <main class="alt-grid"><!-- HEADER -->
-<header class="full-grady">
-</header>
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h2 class="alt-title">Grady Centennial Logo</h2>
-        <span class="tags">Brand/Identity, Web Design, Email Marketing, Print Materials</span>
+    <main class="alt-grid"><div class="masonry-container">
+  <div class="grid-sizer"></div>
+    <a href="../bene.html">
+      <div class="col-md-4 col-lg-6 item">
+        <div class="hovereffect">
+          <img src="img/work/bene2.jpg" class="img-responsive">
+        <div class="overlay">
+          <h2>Bene Scarves</h2>
+        </div>
+        </div>
       </div>
-      <div class="col-md-8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </a>
+
+  <a href="../perkins.html">
+    <div class="col-md-4 col-lg-6 item">
+      <div class="hovereffect">
+        <img src="img/work/pw2.jpg" class="img-responsive">
+        <div class="overlay">
+          <h2>Perkins+Will</h2>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="../experiment.html">
+    <div class="col-md-4 col-lg-6 item">
+      <div class="hovereffect">
+        <img src="img/work/final.jpg" class="img-responsive">
+        <div class="overlay">
+          <h2>The Experiment</h2>
+        </div>
+      </div>
+    </div>
+  </a>
+
+<a href="../blue.html">
+  <div class="col-md-4 col-lg-6 item">
+    <div class="hovereffect">
+      <img src="img/work/blue2.jpg" class="img-responsive">
+      <div class="overlay">
+        <h2>The Journey of Blue</h2>
       </div>
     </div>
   </div>
-</section><section class="sub-footer">
-  <ul class="pager">
-    <li class="previous"><a href="http://noemietshinanga.com/work/poster"><<< Poster Design</a></li>
-    <li><a href="http://noemietshinanga.com/work">View All</a></li>
-    <li class="next"><a href="http://noemietshinanga.com/work/shirt">Shirt >>></a></li>
-  </ul>
-</section><footer>
+ </a>
+
+<a href="../poster.html">
+  <div class="col-md-4 col-lg-6 item">
+    <div class="hovereffect">
+      <img src="img/work/flyer3.jpg" class="img-responsive">
+      <div class="overlay">
+        <h2>Poster</h2>
+      </div>
+    </div>
+  </div>
+</a>
+
+<a href="../grady.html">
+  <div class="col-md-4 col-lg-6 item">
+    <div class="hovereffect">
+      <img src="img/work/grady2.jpg" class="img-responsive">
+      <div class="overlay">
+        <h2>Grady Centennial</h2>
+      </div>
+    </div>
+  </div>
+</a>
+
+<a href="../shirts.html">
+  <div class="col-md-4 col-lg-6 item">
+    <div class="hovereffect">
+      <img src="img/work/shirt22.jpg" class="img-responsive">
+      <div class="overlay">
+        <h2>Apparel Design</h2>
+      </div>
+    </div>
+  </div>
+</a>
+
+<a href="../chill.html">
+  <div class="col-md-4 col-lg-6 item">
+    <div class="hovereffect">
+      <img src="img/work/chill.jpg" class="img-responsive">
+      <div class="overlay">
+        <h2>Chill Out App</h2>
+      </div>
+    </div>
+  </div>
+</a>
+
+<a href="../morning.html">
+  <div class="col-md-4 col-lg-6 item">
+    <div class="hovereffect">
+      <img src="img/work/morning.jpg" class="img-responsive">
+      <div class="overlay">
+        <h2>The Morning After</h2>
+      </div>
+    </div>
+  </div>
+</a>
+
+<a href="../reach.html">
+  <div class="col-md-4 col-lg-6 item">
+    <div class="hovereffect">
+      <img src="img/work/rpj2.jpg" class="img-responsive">
+      <div class="overlay">
+        <h2>The Reach Campaign</h2>
+      </div>
+    </div>
+  </div>
+</a>
+
+<a href="../photography.html">
+  <div class="col-md-4 col-lg-6 item">
+    <div class="hovereffect">
+      <img src="img/work/photo.jpg" class="img-responsive">
+      <div class="overlay">
+        <h2>Photography</h2>
+      </div>
+    </div>
+  </div>
+</a>
+
+</div>
+<footer>
   <div class="container">
     <div class="row">
       <div class="col-md-4">

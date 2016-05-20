@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="img/nt-favicon.ico">
-    <base href="http://noemietshinanga.com/">
     <!-- Basic page information -->
     <meta name="description" content="Description">
     <meta name="keywords" content="noemie, tshinanga, design, atlanta">
@@ -36,7 +35,7 @@
   </head>
   <body>
     <div id="test">
-      <div class="list-group"><a href="index">Home</a><a href="../working">Work</a><a href="#">About Me</a><a href="#">Photography</a><a href="#">Contact Me</a></div>
+      <div class="list-group"><a href="index">Home</a><a href="../projects">Work</a><a href="#">About Me</a><a href="#">Photography</a><a href="#">Contact Me</a></div>
     </div>
     <main class="alt-grid"><!-- HEADER -->
 <header class="full-perkins">
@@ -93,7 +92,24 @@
     <li><a href="http://noemietshinanga.com/work">View All</a></li>
     <li class="next"><a href="http://noemietshinanga.com/work/experiment">Experiment >>></a></li>
   </ul>
-</section>    <!-- JS libraries and scripts -->
+</section><footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Noemie Tshinanga</h3>
+        <h4>Front-End Development & Creative Direction</h4>
+      </div>
+      <div class="col-md-4">
+      <h3 class="white">Email</h3>
+      <h4>info@noemietshinanga.com</h4>
+      </div>
+      <div class="col-md-4 icons">
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</footer>    <!-- JS libraries and scripts -->
   <!--   <script src="js/src/jquery-1.11.2.min.js"></script>  -->
     <script src="js/src/jquery.flexslider.js"></script>
     <script src="js/src/jquery.imagesloaded.min.js"></script>
