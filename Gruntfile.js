@@ -34,6 +34,11 @@ module.exports = function(grunt) {
     //   img: 'img'
     // },
 
+    copy: {
+      main: {
+          files: [{expand: true, src: ['./'], dest: 'work/'}]
+      },
+    },
     /**
      * Sass compiling
      * @github.com/gruntjs/grunt-contrib-sass
@@ -48,8 +53,19 @@ module.exports = function(grunt) {
         files: {
           'css/global.css': 'sass/global.scss',
         }
+      },
+
+      other: {
+        options: {
+          style: 'compressed',
+          sourcemap: 'none',
+        },
+        files: {
+          'work/css/global.css': 'sass/global.scss',
+        }
       }
     },
+  
 
       // Browser Sync integration
     browserSync: {
@@ -95,6 +111,25 @@ module.exports = function(grunt) {
              ],
         // the location of the resulting JS file
         dest: 'js/global.js'
+      },
+      other: {
+        // the files to concatenate
+        src: [
+              "js/src/bootstrap.min.js",
+              "js/src/main-1.js",
+              // "js/src/masonry.js",
+              "js/src/masonry.pkgd.min.js",
+              "js/src/mas-test.js",
+              "js/src/masonry.pkgd.min.js",
+              "js/src/jquery.flexslider.js",
+              "js/src/jquery.isotope.js",
+              "js/src/jquery.imagesloaded.min.js",
+              "js/src/sidebar_menu.js",
+              "js/src/bootsidemenu.js",
+              "js/src/google.js",
+             ],
+        // the location of the resulting JS file
+        dest: 'work/js/global.js'
       },
     },
 
@@ -148,17 +183,6 @@ module.exports = function(grunt) {
           // "work/morning.html": "jade/morning.jade",
           // "work/shirt.html": "jade/shirt.jade",
           // "work/blue.html": "jade/blue.jade",
-          // "bene": "jade/bene.jade",
-          // "perkins": "jade/perkins.jade",
-          // "reach": "jade/reach.jade",
-          // "chill": "jade/chill.jade",
-          // "grady": "jade/grady.jade",
-          // "experiment": "jade/experiment.jade",
-          // "poster": "jade/poster.jade",
-          // "morning": "jade/morning.jade",
-          // "shirt": "jade/shirt.jade",
-          // "blue": "jade/blue.jade",
-
         }
       }
     },
@@ -290,6 +314,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-concurrent');
+  grunt.loadNpmTasks('grunt-copy');
 
   /**
    * Default Task
@@ -307,7 +332,7 @@ module.exports = function(grunt) {
    */
   // grunt.registerTask('production', ['concat:js', 'uglify', 'sass:dist']);
  
-  grunt.registerTask('default', ['concurrent:monitor']);
+  grunt.registerTask('default', ['concurrent:monitor', 'copy']);
 };
 
 
