@@ -576,10 +576,7 @@ p {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { ... }
 
-section{
-  margin-top: 60px;
-  margin-bottom: 100px;
-}
+
 
 .pn{
   padding: 0px !important;
