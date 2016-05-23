@@ -24,6 +24,14 @@ footer{
   padding: 10px;
 }
 
+.social-links {
+/*    float: right;*/
+    text-align: right;
+}
+.fa-2x {
+    font-size: 1.5em;
+}
+
 .pager li > a, .pager li > span {
     display: inline-block;
     padding: 5px 14px;

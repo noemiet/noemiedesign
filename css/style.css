@@ -600,3 +600,28 @@ p {
   max-width:none;
   /*padding:0;*/
 }
+
+/* ==========================================================================
+ANIMATE STYLES
+========================================================================== */
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7 { visibility: hidden; }
+.fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUp, .fadeInLeft, .fadeInRight, .fadeIn { visibility: visible; }
+.delay-05s {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+.delay-1s {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+.delay-15s {
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
+a i{
+  color: #333;
+}
+
+a i:hover{
+  color: #999;
+}

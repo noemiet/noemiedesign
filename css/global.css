@@ -665,6 +665,23 @@ ul.tags {
   font-size: 1.2rem;
 }
 
+ul.tags li a {
+  color: #000;
+}
+ul.tags li a:hover {
+  color: #C7CECB;
+  text-decoration: none;
+}
+
+h4 a {
+  color: #000;
+  font-family: 'Rokkitt', serif;
+}
+h4 a:hover {
+  color: #C7CECB;
+  text-decoration: none;
+}
+
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -849,6 +866,15 @@ footer .icons {
   color: #fff;
   margin-bottom: 0;
   padding: 10px;
+}
+
+.social-links {
+  /*    float: right;*/
+  text-align: right;
+}
+
+.fa-2x {
+  font-size: 1.5em;
 }
 
 .pager li > a, .pager li > span {
