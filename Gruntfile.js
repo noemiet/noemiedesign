@@ -138,6 +138,7 @@ module.exports = function(grunt) {
           "shirt.html": "jade/shirt.jade",
           "blue.html": "jade/blue.jade",
           "about.html": "jade/about.jade",
+          "hack.html": "jade/hack.jade",
           // "work/index.html": "jade/work.jade",
           // "work/bene.html": "jade/bene.jade",
           // "work/perkins.html": "jade/perkins.jade",
