@@ -580,7 +580,7 @@ header h1 {
   -o-background-size: cover;
 }
 
-.full-poster {
+/*.full-poster {
   display: table;
   position: relative;
   width: 100%;
@@ -590,8 +590,7 @@ header h1 {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-}
-
+}*/
 .white {
   color: #fff;
 }
