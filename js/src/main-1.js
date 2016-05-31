@@ -16,6 +16,38 @@ function init_masonry(){
     });
 }
 
+$('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+
+// filter .metal items
+$grid.isotope({ filter: '.print' });
+
+// filter .alkali OR .alkaline-earth items
+$grid.isotope({ filter: '.web, .ui' });
+
+// filter .metal AND .transition items
+$grid.isotope({ filter: '.photo.video' });
+
+// show all items
+$grid.isotope({ filter: '*' });
+
+// cache container
+var $container = $('.masonry-container');
+// initialize isotope
+$container.isotope({
+  // options...
+});
+
+// filter items when filter link is clicked
+$('#filters a').click(function(){
+  var selector = $(this).attr('data-filter');
+  $container.isotope({ filter: selector });
+  return false;
+});
+
 
 
 // $(document).ready(function(){

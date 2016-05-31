@@ -1,0 +1,16 @@
+/**** Isotope filtering ****/
+
+.isotope-item {
+  z-index: 999;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+#filters{
+    display: inline-flex;
+    list-style-image: none;
+    padding-right: 10px;
+}

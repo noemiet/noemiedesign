@@ -92,6 +92,8 @@ module.exports = function(grunt) {
               "js/src/sidebar_menu.js",
               "js/src/bootsidemenu.js",
               "js/src/google.js",
+              "js/src/isotope.pkgd.js",
+              "js/src/active-state.js",
              ],
         // the location of the resulting JS file
         dest: 'js/global.js'
