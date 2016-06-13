@@ -58,6 +58,8 @@ footer{
     text-decoration: none;
     color: #1d1d1d;
 }
+@media (max-width: 767px){
 .visible-xs {
     display: inline !important;
+}
 }

@@ -1176,10 +1176,11 @@ footer .icons {
   color: #1d1d1d;
 }
 
-.visible-xs {
-  display: inline !important;
+@media (max-width: 767px) {
+  .visible-xs {
+    display: inline !important;
+  }
 }
-
 section {
   padding-top: 60px;
   padding-bottom: 100px;
