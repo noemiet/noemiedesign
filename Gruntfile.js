@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+  module.exports = function(grunt) {
   /**
    * Initialize grunt
    */
@@ -94,6 +94,7 @@ module.exports = function(grunt) {
               "js/src/google.js",
               "js/src/isotope.pkgd.js",
               "js/src/active-state.js",
+              "js/src/jquery.waypoints.min.js",
              ],
         // the location of the resulting JS file
         dest: 'js/global.js'

@@ -9,9 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="img/nt-favicon.ico">
     <!-- Basic page information -->
-    <meta name="description" content="Description">
+    <meta name="description" content="Noemie Tshinanga, Front End Developer, Photograper | Stay uncomfortable, folks">
     <meta name="keywords" content="noemie, tshinanga, design, atlanta">
     <meta name="author" content="Noemie Tshinanga">
+    <meta property="og:image" content="http://noemietshinanga.com/img/noemiet.jpg">
+    <meta property="og:title" content="Noemie Tshinanga">
+    <meta property="og:url" content="http://noemietshinanga.com/">
     <!-- Custom Google fonts-->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet" type="text/css">
@@ -34,19 +37,18 @@
     </script>
   </head>
   <body>
-    <nav id="test">
-      <ul class="list-group">
-        <li> <a href="/">Home</a></li>
-        <li><a href="http://noemietshinanga.com/work/">Work</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="#">Contact Me</a></li>
-      </ul>
-    </nav>
+    <div id="test">
+      <div class="list-group"><a href="/">Home</a><a href="http://noemietshinanga.com/work/">Work</a><a href="about">About Me</a><a href="http://blog.noemietshinanga.com/" target="_blank">Blog</a>
+        <div class="social-links"><a href="https://instagram.com/noemiemarguerite/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a><a href="https://twitter.com/noemietshinanga" target="_blank"><i class="fa fa-twitter fa-2x"></i></a><a href="https://vimeo.com/noemiet" target="_blank"><i class="fa fa-vimeo fa-2x"></i></a></div>
+      </div>
+    </div>
     <main class="alt-grid"><!-- HEADER -->
-<header class="full-bene">
-  <!-- <h1 class="white center">Bene Scarves</h1> -->
-</header>
+<!-- <header class="full-bene">
+  <h1 class="white center">Bene Scarves</h1>
+</header> -->
+<div class="container-fluid pn">
+  <img src="/../img/bene/big.jpg" class="img-responsive gif"> 
+</div>
 <section>
   <div class="container">
     <div class="row">
@@ -122,9 +124,11 @@
 
 <section class="sub-footer">
   <ul class="pager">
+    <li class="visible-xs"><a href="hack"><<<</a></li>
     <li class="previous hidden-xs"><a href="hack"><<< Hackathon</a></li>
     <li><a href="http://noemietshinanga.com/work">View All</a></li>
     <li class="next hidden-xs"><a href="perkins">Perkins+Will >>></a></li>
+    <li class="visible-xs"><a href="perkins">>>></a></li>
   </ul>
 </section>    <!-- JS libraries and scripts -->
   <!--   <script src="js/src/jquery-1.11.2.min.js"></script>  -->
@@ -144,6 +148,8 @@
   ga('send', 'pageview');
 
 </script>
+
+
     </main>
   </body>
 </html>

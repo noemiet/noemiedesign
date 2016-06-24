@@ -106,7 +106,7 @@
 }*/
 @media (max-width: 1920px) {
       .sidebar {
-            width: 230px;
+            width: 190px;
       }
       .sidebar.sidebar-left{
             left:0px;
@@ -223,14 +223,14 @@ a.list-group-item:hover{
 }
 
 .sidebar .list-group > a{
-  border: none;
-  padding: 1px 15px;
-  font-family: Oswald,sans-serif;
-  text-transform: uppercase;
-  font-size: 20px;
-  color: #555;
-  position: relative;
-  display: block;
+    border: none;
+    padding: 3px 25px;
+    font-family: Oswald,sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #555;
+    position: relative;
+    display: block;
 }
 
 .sidebar .list-group > a:hover{
