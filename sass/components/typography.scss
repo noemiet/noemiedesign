@@ -82,13 +82,25 @@ p{
   line-height: 1;
 }
 
-ul.tags{
+ul.tags {
+    list-style-type: none;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+ul.tags li{
   list-style-type:none;
   color: #000000;
   font-size: 1.2rem;
 }
 
-ul.tags li a{
+ul.tags-about{
+  list-style-type:none;
+  color: #000000;
+  font-size: 1.2rem;
+}
+
+ul.tags-about li a{
   color: #000;
 
   &:hover{

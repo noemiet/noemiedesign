@@ -245,6 +245,9 @@
 
 .list-group {
   margin-top: 70px;
+  ul li{
+    padding-bottom: 5px;
+  }
 }
 
 .toggler {
@@ -317,6 +320,9 @@
 
 .sidebar .list-group {
   margin-bottom: 0px;
+  ul li{
+    padding-bottom: 5px;
+  }
 }
 
 .sidebar .list-group-item {
@@ -355,9 +361,16 @@ a.list-group-item:hover {
   color: #555;
   position: relative;
   display: block;
+  font-weight: 300;
 }
 
 .sidebar ul.list-group li a:hover {
+  color: #C7CECB !important;
+  text-decoration: none !important;
+  background-color: #fff;
+}
+
+.active{
   color: #C7CECB !important;
   text-decoration: none !important;
   background-color: #fff;

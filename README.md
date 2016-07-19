@@ -8,7 +8,7 @@ This site was built using
 - Sass
 - Bootstrap
 - Grunt
-- Git Commans
+- Git Commands
 - jQuery
 - Sublime Text
 - Terminal (iTerm)
@@ -16,8 +16,9 @@ This site was built using
 
 
 ## Where's the site?
-The porfolio is still a work in progress but you can most definitely check it out here: http://noemietshinanga.com/
+The porfolio can be viewed here http://noemietshinanga.com/
 
 ## I'd Like to Work With You
 Really? Awesome! Email me at noemie.tshinanga@gmail.com
+I'm also looking for full time opportunities. My resume can be viewed here: http://noemietshinanga.com/resume.pdf
 
