@@ -70,7 +70,7 @@
         <span class="label">Role</span></br>
           <li>Web Development</li> 
           <li>Web Design</li> 
-          <li>UI & UX</li>
+          <li>UI &amp; UX</li>
         </ul>
       </div>
     </div>
@@ -90,6 +90,30 @@
   <img src="/../img/pw/hello.jpg" class="img-responsive">
 </div>
 
+<div class="container-fluid pn">
+  <div class="col-md-6">
+    <div id="lofi">
+      <ul class="slides">
+        <li><img src="/../img/pw/trans/three.png" class="img-responsive"></li>
+        <li><img src="/../img/pw/trans/four.png" class="img-responsive"></li>
+        <li><img src="/../img/pw/trans/five.png" class="img-responsive"></li>
+    <!--     <li><img src="/../img/pw/trans/two-lofi.jpg" class="img-responsive"></li>
+        <li><img src="/../img/pw/trans/two-hifi.jpg" class="img-responsive"></li>  -->
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div id="transform">
+      <ul class="slides">
+        <li><img src="/../img/pw/trans/one-lofi.jpg" class="img-responsive"></li>
+        <li><img src="/../img/pw/trans/one-hifi.jpg" class="img-responsive"></li>
+        <li><img src="/../img/pw/trans/two-lofi.jpg" class="img-responsive"></li>
+        <li><img src="/../img/pw/trans/two-hifi.jpg" class="img-responsive"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 
 <section class="sub-footer">
   <ul class="pager">
@@ -106,6 +130,24 @@
     <script src="js/src/masonry.pkgd.min.js"></script>
 <!--     <script src="js/src/masonry-edit.js"></script> -->
     <script src="js/src/main-1.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function(){
+        $('#lofi').flexslider({
+          animation: "slide",
+          animationLoop: false,
+          // itemWidth: 110,
+          itemMargin: 2,
+          minItems: 1,
+          controlNav: true 
+        });
+        $('#transform').flexslider({
+          controlNav: false,  
+          slideshowSpeed: 2500,         
+          animationSpeed: 600, 
+        });
+      });
+    </script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
