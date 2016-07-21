@@ -1,0 +1,318 @@
+/*#header{
+	background-color: #3f8dbf;
+	float: left;
+	width: 100%;
+	height: 50px;
+	color: rgba(255,255,255,1);
+	line-height: 50px;
+}
+#header a {
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+	display: block;
+	font-size: 15px;
+}
+#header-left{
+	float: left;
+	height: 50px;
+}
+#header-left:hover #header-left-icon{
+	background-color: #3F8DBF;
+}
+#header-left:hover #header-left-text{
+	background-color: #599BC8;
+}
+#header-left-icon{
+	float: left;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	background-color: #35759F;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+}
+#header-left-icon a {
+	font-size: 25px;
+}
+
+#header-left-text{
+	float: left;
+	height: 50px;
+		-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+}
+#header-left-text a {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#header-right{
+	float: right;
+	height: 50px;
+}
+#header-right:hover #header-right-icon{
+	background-color: #3F8DBF;
+	}
+#header-right:hover #header-right-text{
+	background-color: #599BC8;
+	}
+#header-right-icon{
+	float: right;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	background-color: #35759F;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+}
+#header-right-text{
+	float: right;
+	height: 50px;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+}
+#header-right-text a {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+#gallery{
+	float: left;
+	width: 100%;
+}
+#gallery-header{
+	height: 100px;
+	width: 100%;
+	float: left;
+}
+#gallery-header-center{
+	height: 100px;
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#gallery-header-center-left{
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	margin-top: 32px;
+}
+#gallery-header-center-left-icon{
+	float: left;
+	height: 35px;
+	width: 35px;
+	background-color: rgba(63,141,191,1);
+	color: rgba(255,255,255,1);
+	text-align: center;
+	font-size: 20px;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+}
+#gallery-header-center-left-icon:hover {
+	background-color: rgba(63,141,191,0.5);
+	cursor: pointer;
+}
+#gallery-header-center-left-title{
+	float: left;
+	height: 35px;
+	font-size: 25px;
+	color: #3f8dbf;
+	margin-left: 20px;
+}
+#gallery-header-center-right{
+	float: right;
+	height: 35px;
+	margin-top: 32px;
+	line-height: 35px;
+}
+.gallery-header-center-right-links {
+	color: #333333;
+	float: left;
+	height: 35px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-left: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	transition: background 0.5s;
+}
+.gallery-header-center-right-links:hover {
+	background-color: rgba(63,141,191,1);
+	color: rgba(255,255,255,1);
+	cursor: pointer;
+}
+.gallery-header-center-right-links-current {
+	color: #FFFFFF;
+	background-color: rgba(63,141,191,1);
+}
+.gallery-header-center-right-links-current:hover {
+	background-color: rgba(63,141,191,0.5);
+}
+#gallery-content{
+	float: left;
+	width: 100%;
+}
+.gallery-content-center-normal {
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.gallery-content-center-full {
+	float: left;
+	width: 100%;
+}
+#gallery-content-center img {
+/*	width: 300px;
+	margin-bottom: 10px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	margin-left: 10px;
+}
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #28F;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* ---- isotope ---- */
+
+.grid {
+  border: 1px solid #333;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  background: #888;
+  color: #262524;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
