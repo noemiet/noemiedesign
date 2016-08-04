@@ -143,6 +143,7 @@
           "about.html": "jade/about.jade",
           "hack.html": "jade/hack.jade",
           "work2.html": "jade/work2.jade",
+          "art.html":"jade/art.jade",
           // "work2/index.html": "jade/work.jade",
           // "work2/bene.html": "jade/bene.jade",
           // "work2/perkins.html": "jade/perkins.jade",
