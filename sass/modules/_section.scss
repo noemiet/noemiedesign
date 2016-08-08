@@ -22,8 +22,8 @@ section{
   margin-bottom: 10px;
 }
 
-.pt-150{
-  padding: 150px 20px;
+.pt-70{
+  padding: 70px 20px;
 }
 
 .prl-10{
@@ -37,20 +37,16 @@ section{
 
 .top-bar{
   display: block;
-  width: 100%;
   color: #fff;
   text-align: center;
   padding: 5px;
   text-transform: uppercase;
   background-color: #333;
-  margin-bottom: 20px;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
-  position: fixed;
   z-index: 9999;
   a{
     color: #C7CECB; 
-    font-family: 'Oswald', sans-serif;
   }
 }
 

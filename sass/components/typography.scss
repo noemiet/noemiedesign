@@ -92,6 +92,10 @@ ul.tags li{
   list-style-type:none;
   color: #000000;
   font-size: 1.2rem;
+  a:hover{
+    color: #C7CECB !important;
+    text-decoration: none !important;
+  }
 }
 
 ul.tags-about{

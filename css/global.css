@@ -897,6 +897,10 @@ ul.tags li {
   color: #000000;
   font-size: 1.2rem;
 }
+ul.tags li a:hover {
+  color: #C7CECB !important;
+  text-decoration: none !important;
+}
 
 ul.tags-about {
   list-style-type: none;
@@ -1960,8 +1964,8 @@ section {
   margin-bottom: 10px;
 }
 
-.pt-150 {
-  padding: 150px 20px;
+.pt-70 {
+  padding: 70px 20px;
 }
 
 .prl-10 {
@@ -1975,21 +1979,17 @@ section {
 
 .top-bar {
   display: block;
-  width: 100%;
   color: #fff;
   text-align: center;
   padding: 5px;
   text-transform: uppercase;
   background-color: #333;
-  margin-bottom: 20px;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
-  position: fixed;
   z-index: 9999;
 }
 .top-bar a {
   color: #C7CECB;
-  font-family: 'Oswald', sans-serif;
 }
 
 .top-bar2 {
