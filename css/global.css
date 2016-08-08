@@ -979,6 +979,30 @@ h4 a:hover {
   font-size: .9em !important;
 }
 
+.art a {
+  font-weight: 600;
+  color: #cec9c6;
+}
+.art a:hover {
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+}
+.art h3 {
+  text-transform: uppercase;
+  font-family: 'Rokkitt', serif;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.black {
+  background-color: black;
+}
+
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -1824,6 +1848,20 @@ body {
   background: #ff0099;
 }
 
+.art-button {
+  background-color: white;
+  border: #333 1px solid;
+  border-radius: 20px;
+  padding: 6px 30px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.art-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
 .bottom-button {
   position: absolute;
   top: 60%;
@@ -1920,4 +1958,51 @@ section {
 .info2 {
   padding-left: 20px !important;
   margin-bottom: 10px;
+}
+
+.pt-150 {
+  padding: 150px 20px;
+}
+
+.prl-10 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.top-bar {
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  text-transform: uppercase;
+  background-color: #333;
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  position: fixed;
+  z-index: 9999;
+}
+.top-bar a {
+  color: #C7CECB;
+  font-family: 'Oswald', sans-serif;
+}
+
+.top-bar2 {
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  background-color: #333;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: 'Rokkitt', serif;
+  letter-spacing: 2px;
+  position: fixed;
+  z-index: 9999;
 }

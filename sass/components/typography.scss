@@ -174,3 +174,29 @@ h4 a{
 .fa-2x {
     font-size: .9em !important;
 }
+
+.art{
+  a{
+  font-weight: 600;
+  color: #cec9c6;
+  &:hover{
+    cursor:pointer;
+    color: #333;
+    text-decoration: none;
+  }
+}
+  h3{
+    text-transform: uppercase;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+}
+
+.white-text{
+  color: #fff;
+}
+
+.black{
+  background-color: black;
+}

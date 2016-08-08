@@ -20,5 +20,51 @@ section{
 .info2{
   padding-left: 20px !important;
   margin-bottom: 10px;
+}
 
+.pt-150{
+  padding: 150px 20px;
+}
+
+.prl-10{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.pb-100{
+  padding-bottom: 100px;
+}
+
+.top-bar{
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  text-transform: uppercase;
+  background-color: #333;
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  position: fixed;
+  z-index: 9999;
+  a{
+    color: #C7CECB; 
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+.top-bar2{
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  background-color: #333;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: 'Rokkitt', serif;
+  letter-spacing: 2px;
+  position: fixed;
+  z-index: 9999;
 }
