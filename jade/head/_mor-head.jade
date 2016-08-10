@@ -1,0 +1,42 @@
+head
+  title Noemie Tshinanga
+meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+meta(name='viewport', content='width=device-width, initial-scale=1')
+meta(http-equiv='X-UA-Compatible', content='IE=edge')
+link(rel="icon", type="image/png", href='img/nt-favicon.ico')
+//- base(href="http://noemietshinanga.com/")
+
+// Basic page information 
+meta(name='description', content="The Morning After: As a young teen easily absorbed by the widespread of teen angst television, I wanted to create a mini photo series that brought my OC/Degrassi fantasies to life. I came up with 'The Morning After' in which I asked some friends to re-enact various stages and interactions of how one recoups from the morning after a party.")
+meta(name='keywords', content='noemie, tshinanga, design, atlanta')
+meta(name='author', content='Noemie Tshinanga')
+meta(property='og:image' content='http://noemietshinanga.com/img/tma/tma-main.jpg')
+meta(property="og:title" content="Noemie Tshinanga")
+meta(property="og:url" content="http://noemietshinanga.com/morning")
+
+
+
+// Custom Google fonts
+link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+//- link(href='http://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
+link(href='http://fonts.googleapis.com/css?family=Rokkitt', rel='stylesheet', type='text/css')
+link(href='https://fonts.googleapis.com/css?family=Oswald:400,300', rel='stylesheet', type='text/css')
+
+// Bootstrap CSS Style
+link(href='css/bootstrap.css', rel='stylesheet')
+link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css', rel='stylesheet')
+
+
+//Main CSS Style
+link(href='css/style.css', rel='stylesheet')
+link(href='css/global.css', rel='stylesheet')
+
+//jquery
+script(src="http://code.jquery.com/jquery-1.11.0.min.js")
+script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
+script(src="js/src/bootsidemenu.js")
+script(type="text/javascript").
+  $(document).ready(function(){
+    $('#test').BootSideMenu({side:"left", autoClose:true});
+    $('#test2').BootSideMenu({side:"left", autoClose:false});
+  });
