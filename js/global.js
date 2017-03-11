@@ -1,7 +1,7 @@
 /**
 Designs - 0.1.0
 https://github.com/noemiet/noemiedesign
-Copyright (c) 2016 Noemie Tshinanga
+Copyright (c) 2017 Noemie Tshinanga
 License: MIT
 */
 /*!

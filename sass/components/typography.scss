@@ -1,7 +1,6 @@
 .white{
   color: #fff;
 }
-
 h1{
   font-family: 'Rokkitt', serif;
 }
@@ -9,6 +8,22 @@ h2{
   font-family: 'Rokkitt', serif;
   font-size: 4rem;
   line-height: 3rem;
+}
+
+.rok-label{
+  font-family: 'Rokkitt', serif;
+  display: inline;
+  padding: 0;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #797171;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .alt-title{

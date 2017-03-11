@@ -37,7 +37,7 @@
     </script>
   </head>
   <body>
-    <div id="test">
+    <div class="container sidebar sidebar-left">
       <div class="list-group"><a href="/">Home</a><a href="http://noemietshinanga.com/work/">Work</a><a href="about">About Me</a><a href="http://www.noemie-marguerite.com/" target="_blank">Photography</a><a href="https://lookandfeelblog.tumblr.com/" target="_blank">Style</a>
         <div class="social-links"><a href="https://instagram.com/noemiemarguerite/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a><a href="https://twitter.com/noemietshinanga" target="_blank"><i class="fa fa-twitter fa-2x"></i></a><a href="https://vimeo.com/noemiet" target="_blank"><i class="fa fa-vimeo fa-2x"></i></a></div>
       </div>
@@ -111,6 +111,7 @@
     <script src="js/src/jquery.flexslider.js"></script>
     <script src="js/src/jquery.imagesloaded.min.js"></script>
     <script src="js/src/masonry.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
 <!--     <script src="js/src/masonry-edit.js"></script> -->
     <script src="js/src/main-1.js"></script>
 <!--     <script type="text/javascript" src="js/src/jquery.isotope.js"></script>
@@ -118,6 +119,7 @@
 <script type="text/javascript" src="js/src/jquery-ui-1.10.4.min.js"></script> -->
 
     <script type="text/javascript" charset="utf-8">
+    $('.side').offcanvas()
       $(window).load(function(){
         $('#lofi').flexslider({
           animation: "slide",
@@ -133,6 +135,32 @@
           animationSpeed: 600, 
         });
       });
+      // var $grid = $('.masonry-container').masonry({
+      //   itemSelector: '.item',
+      //   percentPosition: true,
+      //   gutter: 10,
+      //   columnWidth: '.grid-sizer'
+      // });
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});  
+
+
+    $('.masonry-container').imagesLoaded()
+  .always( function( instance ) {
+    console.log('all images loaded');
+  })
+  .done( function( instance ) {
+    console.log('all images successfully loaded');
+  })
+  .fail( function() {
+    console.log('all images loaded, at least one is broken');
+  })
+  .progress( function( instance, image ) {
+    var result = image.isLoaded ? 'loaded' : 'broken';
+    console.log( 'image is ' + result + ' for ' + image.img.src );
+  });
     </script>
 
 <script>
