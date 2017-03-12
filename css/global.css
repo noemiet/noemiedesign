@@ -2092,11 +2092,15 @@ section {
 
 .navbar-toggle {
   display: block;
-  background-image: url(../img/open.png);
+  /*  background-image: url(../img/open2.png);*/
   width: 77px;
   height: 77px;
   background-repeat: no-repeat;
   margin-top: 50px;
-  float: left;
+  float: right;
   position: fixed;
+}
+
+.text-box {
+  padding: 50px 80px;
 }
