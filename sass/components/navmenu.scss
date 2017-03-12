@@ -1,0 +1,29 @@
+.navmenu{
+  width: 200px;
+}
+
+.navmenu-brand {
+  display: block;
+  line-height: 0px; 
+  padding: 0px; 
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.navmenu-nav {
+  margin-left: 60px;
+  li{
+    font-family: 'bebas_neue_regularregular', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
+
+.navmenu-default{
+  background-color: #fff;
+}
+
+a:hover{
+  color: #DB0219;
+  text-decoration: none;
+}
