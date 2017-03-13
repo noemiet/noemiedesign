@@ -2092,13 +2092,8 @@ section {
 
 .navbar-toggle {
   display: block;
-  /*  background-image: url(../img/open2.png);*/
-  width: 77px;
-  height: 77px;
-  background-repeat: no-repeat;
-  margin-top: 50px;
-  float: right;
-  position: fixed;
+  float: left;
+  position: absolute;
 }
 
 .text-box {
