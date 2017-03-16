@@ -5,13 +5,12 @@ $(document).ready(function(){
 });
 function init_masonry(){
     var $container = $('.masonry-container');
-
     $container.imagesLoaded( function(){
         $container.masonry({
-          columnWidth: '.grid-sizer',
-          itemSelector: '.item',
-          percentPosition: true,
-          isAnimated: true
+          columnWidth: '.item',
+          itemSelector: '.item'
+          // percentPosition: true,
+          // isAnimated: true
         });
     });
 }
