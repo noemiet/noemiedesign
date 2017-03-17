@@ -37,10 +37,17 @@
     </script>
   </head>
   <body>
-    <div class="container sidebar sidebar-left">
-      <div class="list-group"><a href="/">Home</a><a href="http://noemietshinanga.com/work/">Work</a><a href="about">About Me</a><a href="http://www.noemie-marguerite.com/" target="_blank">Photography</a><a href="https://lookandfeelblog.tumblr.com/" target="_blank">Style</a>
-        <div class="social-links"><a href="https://instagram.com/noemiemarguerite/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a><a href="https://twitter.com/noemietshinanga" target="_blank"><i class="fa fa-twitter fa-2x"></i></a><a href="https://vimeo.com/noemiet" target="_blank"><i class="fa fa-vimeo fa-2x"></i></a></div>
-      </div>
+    <div id="wrapper">
+      <div class="overlay"></div>
+      <nav id="sidebar-wrapper" role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+        <ul class="nav sidebar-nav">
+          <li class="sidebar-brand"><a href="#">Bootstrap 3</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">First Page</a></li>
+          <li><a href="#">Second Page</a></li>
+          <li><a href="#">Third Page</a></li>
+        </ul>
+      </nav>
     </div>
     <main class="alt-grid"><!-- HEADER -->
 <!-- <header class="full-perkins">
@@ -155,16 +162,6 @@
           animationSpeed: 600, 
         });
       });
-      // var $grid = $('.masonry-container').masonry({
-      //   itemSelector: '.item',
-      //   percentPosition: true,
-      //   gutter: 10,
-      //   columnWidth: '.grid-sizer'
-      // });
-// layout Isotope after each image loads
-// $grid.imagesLoaded().progress( function() {
-//   $grid.masonry();
-// });  
 
 
     $('.masonry-container').imagesLoaded()
@@ -182,6 +179,40 @@
     console.log( 'image is ' + result + ' for ' + image.img.src );
   });
     </script>
+
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <script>
+$(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

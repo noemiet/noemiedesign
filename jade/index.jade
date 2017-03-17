@@ -3,7 +3,8 @@ html(lang="en").full
   head
     include head/_head.jade
   body
-    include _sidebar2.jade
-    include page-contents/index_content.html
-    //- include _footer.html
-    include _scripts.html
+    div#wrapper
+      include _sidebar2.jade
+      include page-contents/index_content.html
+      //- include _footer.html
+      include _scripts.html
