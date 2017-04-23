@@ -514,8 +514,26 @@ a.list-group-item:hover {
 }
 
 header h1 {
-  font-size: 15rem;
+  font-size: 8rem;
+  letter-spacing: 5px;
   padding-top: 25rem;
+  position: absolute;
+  color: #fff;
+  left: 0;
+  right: 0;
+  top: 100px;
+  text-align: center;
+}
+header h3 {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  padding-top: 25rem;
+  position: absolute;
+  color: #fff;
+  left: 0;
+  right: 0;
+  top: 100px;
+  text-align: center;
 }
 
 .full {
