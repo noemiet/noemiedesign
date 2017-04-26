@@ -81,7 +81,17 @@ body, html {
 }
 
 
-.sidebar-nav li a {
+/*.sidebar-nav li a {
+  color: #000;
+  display: block;
+  padding: 10px 15px 10px 30px;
+  text-decoration: none;
+  font-family: 'bebas_neue_regularregular', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}*/
+
+.sidebar-nav a {
   color: #000;
   display: block;
   padding: 10px 15px 10px 30px;
@@ -90,7 +100,6 @@ body, html {
   font-size: 16px;
   letter-spacing: 1px;
 }
-
 
 
 .sidebar-nav .dropdown-menu {

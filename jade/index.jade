@@ -1,10 +1,10 @@
 doctype html
-html(lang="en").full
+html(lang="en")
   head
     include head/_head.jade
   body
-    div#wrapper
       include _sidebar2.jade
-      include page-contents/index_content.html
-      //- include _footer.html
-      include _scripts.html
+      main.alt-grid
+        include page-contents/index_content.html
+        //- include _footer.html
+        include _scripts.html

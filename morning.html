@@ -149,24 +149,24 @@
       });
 
 
-    $('.masonry-container').imagesLoaded()
-  .always( function( instance ) {
-    console.log('all images loaded');
-  })
-  .done( function( instance ) {
-    console.log('all images successfully loaded');
-  })
-  .fail( function() {
-    console.log('all images loaded, at least one is broken');
-  })
-  .progress( function( instance, image ) {
-    var result = image.isLoaded ? 'loaded' : 'broken';
-    console.log( 'image is ' + result + ' for ' + image.img.src );
-  });
+  //   $('.masonry-container').imagesLoaded()
+  // .always( function( instance ) {
+  //   console.log('all images loaded');
+  // })
+  // .done( function( instance ) {
+  //   console.log('all images successfully loaded');
+  // })
+  // .fail( function() {
+  //   console.log('all images loaded, at least one is broken');
+  // })
+  // .progress( function( instance, image ) {
+  //   var result = image.isLoaded ? 'loaded' : 'broken';
+  //   console.log( 'image is ' + result + ' for ' + image.img.src );
+  // });
     </script>
 
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
     <script>
 $(document).ready(function () {
@@ -197,7 +197,7 @@ $(document).ready(function () {
         $('#wrapper').toggleClass('toggled');
   });  
 });
-</script>
+</script> -->
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
