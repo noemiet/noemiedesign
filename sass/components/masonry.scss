@@ -1,15 +1,17 @@
 /**ORIGINAL VERSION**/
 
 /* fluid 5 columns */
-/*.grid-sizer,
-.item { width: 20%; }
- 2 columns 
-.item--width2 { width: 40%; }*/
-/*.masonry-container:after {
+.grid-sizer{
+  width: 100%;
+}
+.item { width: 33.33%; }
+/* 2 columns*/ 
+.item--width2 { width: 40%; }
+.masonry-container:after {
   content: '';
   display: block;
   clear: both;
-}*/
+}
 
 /*.grid-sizer,
 .item {
@@ -28,10 +30,10 @@
   max-width: 100%;
 }*/
 
-/*.grid-sizer,*/
+/*.grid-sizer,
 .item{ 
   width: 100%; 
-}
+}*/
 
 /*.grid-sizer2,
 .item2{
