@@ -245,13 +245,12 @@ a.list-group-item:hover {
   background-color: #fff;
 }
 
-.sidebar-nav a:hover {
+/*.sidebar-nav a:hover {
   text-decoration: none;
   color: #fff;
   background: rgba(255, 255, 255, 0.2);
   border-left: red 2px solid;
-}
-
+}*/
 .sidebar-nav a:active,
 .sidebar-nav a:focus {
   text-decoration: none;
@@ -276,9 +275,49 @@ a.list-group-item:hover {
   background: none;
 }
 
+header {
+  display: table;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/home3.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  /*   &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+      opacity: .6; 
+    }*/
+}
 header h1 {
-  font-size: 15rem;
+  font-size: 10rem;
   padding-top: 25rem;
+}
+header h3 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.nyc {
+  display: table;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/home/nyc.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
 }
 
 .full {
@@ -286,7 +325,7 @@ header h1 {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(../img/home2.jpg) no-repeat center center;
+  background: url(../img/home3.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -480,6 +519,7 @@ h3 {
 
 p {
   font-family: 'Cormorant Garamond', serif;
+  text-transform: none;
 }
 
 .rok-label {
@@ -765,7 +805,7 @@ h4 a:hover {
 }
 
 .hovereffect .overlay:hover {
-  opacity: .5;
+  opacity: 1;
   filter: alpha(opacity=100);
 }
 .hovereffect .overlay:hover h2 {
@@ -782,8 +822,16 @@ h4 a:hover {
   width: 100%;
 }
 
-.item {
+.item-three-column {
   width: 33.33%;
+}
+
+.item-two-column {
+  width: 50%;
+}
+
+.item-full {
+  width: 100%;
 }
 
 /* 2 columns*/
@@ -1727,7 +1775,7 @@ section {
 }
 
 .text-box {
-  padding: 50px 80px;
+  padding: 50px 60px !important;
 }
 
 .row {

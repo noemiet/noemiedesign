@@ -4,7 +4,9 @@
 .grid-sizer{
   width: 100%;
 }
-.item { width: 33.33%; }
+.item-three-column { width: 33.33%; }
+.item-two-column { width: 50%; }
+.item-full {width: 100%;}
 /* 2 columns*/ 
 .item--width2 { width: 40%; }
 .masonry-container:after {
