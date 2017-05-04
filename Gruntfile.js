@@ -145,6 +145,7 @@
           "work2.html": "jade/work2.jade",
           "art.html":"jade/art.jade",
           "royal.html":"jade/royal.jade",
+          "design.html":"jade/design.jade",
           // "work2/index.html": "jade/work.jade",
           // "work2/bene.html": "jade/bene.jade",
           // "work2/perkins.html": "jade/perkins.jade",
