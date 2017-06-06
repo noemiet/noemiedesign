@@ -25,30 +25,26 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet">
     <!--Main CSS Style-->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/node_modules/multiscroll.js/jquery.multiscroll.css">
     <link href="css/global.css" rel="stylesheet">
     <!--jquery-->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/multiscroll.js/jquery.multiscroll.js"></script>
+    <script src="/node_modules/multiscroll.js/vendors/jquery.easings.min.js"></script>
     <script src="js/src/bootsidemenu.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $('#test').BootSideMenu({side:"left", autoClose:true});
         $('#test2').BootSideMenu({side:"left", autoClose:false});
+        $('#multiscroll').multiscroll({
+          anchors: ['main','bene', 'morning', 'chill']
+        });
       });
     </script>
   </head>
-  <body><!-- <div class="container">
-  <div class="row">
-    <div class="col-md-6">
-
-    </div>
-    <div class="col-md-6">
-      <div class="col-">
-      </div>
-    </div>
-  </div>
-</div> -->
-<body>
+  <body><!-- <body>
     <row>
       <div class="col-lg-6 col-sm-12 left-main left-section" id="main">
 
@@ -79,7 +75,37 @@
         </ul>
       </div>
     </row>
-</body>    <!-- JS libraries and scripts -->
+</body> -->
+<div class="section">
+<div id="multiscroll">
+  <div class="ms-left">
+    <div class="ms-section left-main"></div>
+    <div class="ms-section">Some section</div>
+    <div class="ms-section">Some section</div>
+    <div class="ms-section">Some section</div>
+  </div>
+  <div class="ms-right">
+    <div class="ms-section">
+      <ul>
+          <a href="#bene"><li class="project-group">001: Bene Scarves</li></a>
+          <a href="#morning"><li class="project-group">002: The Gathering Spot</li></a>
+          <a href="#chill"><li class="project-group">003: Chill Out App</li></a>
+          <a href="#main"><li class="project-group">004: Perkins+Will</li></a>
+          <li class="project-group">005: Reach Campaign</li>
+          <li class="project-group">006: Grady</li>
+          <li class="project-group">007: The Experiment</li>
+          <li class="project-group">008: Noemie-Marguerite</li>
+          <li class="project-group">009: Williette Safehouse</li>
+          <li class="project-group">010: The Journey With Blue</li>
+        </ul>
+
+    </div>
+    <div class="ms-section left-bene" id="bene"></div>
+    <div class="ms-section left-morning" id="morning"></div>
+    <div class="ms-section left-chill" id="chill"></div>
+  </div>
+</div>
+</div>    <!-- JS libraries and scripts -->
   <!--   <script src="js/src/jquery-1.11.2.min.js"></script>  -->
     <script src="js/src/jquery.flexslider.js"></script>
     <script src="js/src/jquery.imagesloaded.min.js"></script>
@@ -92,6 +118,7 @@
 <script type="text/javascript" src="js/src/jquery-ui-1.10.4.min.js"></script> -->
 
     <script type="text/javascript" charset="utf-8">
+
       $(window).load(function(){
         $('#lofi').flexslider({
           animation: "slide",
@@ -107,6 +134,7 @@
           animationSpeed: 600, 
         });
       });
+     
 
 
   //   $('.masonry-container').imagesLoaded()

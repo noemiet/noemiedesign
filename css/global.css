@@ -1798,7 +1798,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  background: url(../img/home/home-side.jpg) no-repeat center center;
+  background: url(../img/home/left.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1925,4 +1925,13 @@ body {
   background-color: #000;
   color: #FFF;
   height: 100%;
+}
+
+.ms-section li {
+  font-family: 'bebas_neuebold', sans-serif;
+  letter-spacing: .1em;
+  font-size: 24px;
+  padding: 15px;
+  border-bottom: solid 1px #eee;
+  list-style-type: none;
 }
