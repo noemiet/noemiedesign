@@ -1842,11 +1842,11 @@ body {
   display: flex;
 }
 
-.left-morning {
+.left-tgs {
   display: none;
   justify-content: center;
   align-items: center;
-  background: url(../img/work/morning2.jpg) no-repeat center center;
+  background: url(../img/home/tgs.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1854,7 +1854,7 @@ body {
   height: 100%;
   color: #FFF;
 }
-.left-morning:target {
+.left-tgs:target {
   display: flex;
 }
 
