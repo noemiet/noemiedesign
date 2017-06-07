@@ -1802,7 +1802,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  background: url(../img/home/left.jpg) no-repeat center center;
+  background: url(../img/home/home.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1818,7 +1818,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  background: url(../img/work/bene2.jpg) no-repeat center center;
+  background: url(../img/home/bene.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1834,7 +1834,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  background: url(../img/work/chill.jpg) no-repeat center center;
+  background: url(../img/home/chill.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1850,7 +1850,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  background: url(../img/home/tgs.jpg) no-repeat center center;
+  background: url(../img/home/gather.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1862,46 +1862,84 @@ body {
   display: flex;
 }
 
-.item-menu-1:hover + .left {
-  display: flex;
+.left-journey {
+  display: none;
   justify-content: center;
   align-items: center;
-  background: url(../img/work/bene2.jpg) no-repeat center center;
+  background: url(../img/home/journey.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
   color: #FFF;
-  z-index: 10;
+}
+.left-journey:target {
+  display: flex;
 }
 
-.item-menu-2:hover ~ .display-box {
-  background-color: #56584b;
+.left-perkins {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/home/perkins.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  color: #FFF;
+}
+.left-perkins:target {
+  display: flex;
 }
 
-.item-menu-3:hover ~ .display-box {
-  background-color: #332528;
+.left-reach {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/home/reach.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  color: #FFF;
+}
+.left-reach:target {
+  display: flex;
 }
 
-.item-menu-4:hover ~ .display-box {
-  background-color: #2fa7a6;
+.left-grady {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/home/grady.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  color: #FFF;
+}
+.left-grady:target {
+  display: flex;
 }
 
-.item-menu-5:hover ~ .display-box {
-  background-color: #31d4c3;
+.left-exp {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/home/exp.gif) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  color: #FFF;
 }
-
-.item-menu-6:hover ~ .display-box {
-  background-color: #6e34d5;
-}
-
-.item-menu-7:hover ~ .display-box {
-  background-color: #a00d05;
-}
-
-.item-menu-8:hover ~ .display-box {
-  background-color: #71e708;
+.left-exp:target {
+  display: flex;
 }
 
 .right {
