@@ -145,6 +145,10 @@
   color: #6d6e71;
 }
 
+.move {
+  transform: translateX(50%);
+}
+
 .sidebar-left > .toggler {
   /*      -webkit-border-top-right-radius: 4px;
         -webkit-border-bottom-right-radius: 4px;
