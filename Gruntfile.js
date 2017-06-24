@@ -95,6 +95,7 @@
               "js/src/isotope.pkgd.js",
               "js/src/active-state.js",
               "js/src/jquery.waypoints.min.js",
+              "js/src/jasny-bootstrap.js",
              ],
         // the location of the resulting JS file
         dest: 'js/global.js'
