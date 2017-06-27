@@ -174,7 +174,7 @@ body{
     font-size: 16px;
   }
 }
-#section07 { background: url(http://www.nxworld.net/codepen/css-scroll-down-button/bg07.jpg) center center / cover no-repeat;}
+/*#section07 { background: url(http://www.nxworld.net/codepen/css-scroll-down-button/bg07.jpg) center center / cover no-repeat;}*/
 
 #section07 a {
   padding-top: 80px;
@@ -232,7 +232,7 @@ body{
   }
 }
 .demo a {
-  position: absolute;
+/*  position: absolute;*/
   bottom: 20px;
   left: 50%;
   z-index: 2;
@@ -281,4 +281,9 @@ body{
   padding: 15px;
   border-bottom: solid 1px #eee;
   list-style-type: none;
+}
+
+.work-info{
+  padding-left: 30px;
+  position: absolute;
 }
