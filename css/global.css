@@ -1882,6 +1882,22 @@ body {
   display: flex;
 }
 
+.right-main {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/home/home3.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  color: #FFF;
+}
+.right-main:target {
+  display: flex;
+}
+
 .left-bene {
   display: none;
   justify-content: center;
