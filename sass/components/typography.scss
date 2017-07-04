@@ -3,6 +3,7 @@
 }
 h1{
   font-family: 'bebas_neuebold', sans-serif;
+  font-size: 66px;
 }
 h2{
   font-family: 'bebas_neuebold', sans-serif;
@@ -117,7 +118,8 @@ ul.tags li{
   list-style-type:none;
   color: #000000;
   font-size: 1.2rem;
-  a:hover{
+  display: inline-block;
+  &:hover{
     color: #C7CECB !important;
     text-decoration: none !important;
   }
