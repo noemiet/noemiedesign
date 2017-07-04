@@ -6,6 +6,21 @@
   height: 100%;
 }
 
+.menu-text{
+  display: inline-block;
+  transform: rotate(-90deg) translateZ(0);
+  float: left;
+  white-space: nowrap;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: italic;
+  font-style: italic;
+  letter-spacing: .2em;
+}
+.btn-home{
+  font-family: 'bebas_neuebold', sans-serif;
+  font-size: 1.5em;
+}
 
 .navbar-toggle {
   display: block;
@@ -187,9 +202,38 @@ body{
   p{
     color: #000;
     font-size: 16px;
+    margin: 10px 30px;
   }
 }
-/*#section07 { background: url(http://www.nxworld.net/codepen/css-scroll-down-button/bg07.jpg) center center / cover no-repeat;}*/
+
+#section02 a {
+  padding-top: 60px;
+}
+#section02 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section02 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
 
 #section07 a {
   padding-top: 80px;
@@ -246,10 +290,74 @@ body{
     opacity: 0;
   }
 }
-.demo a {
-/*  position: absolute;*/
-  bottom: 20px;
+
+
+#section10 a {
+  padding-top: 60px;
+}
+#section10 a span {
+  position: absolute;
+  top: 0;
   left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section10 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
