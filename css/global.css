@@ -1695,6 +1695,23 @@ a:hover {
   left: 60%;
 }
 
+.side {
+  width: 90%;
+  padding: 50px;
+}
+
+.mood-section {
+  text-align: right;
+}
+.mood-section h4 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+.mood-section p {
+  color: #000;
+  font-size: 16px;
+}
+
 footer {
   margin-top: 10px;
   /* padding-bottom: 15px;*/
@@ -1764,10 +1781,12 @@ footer .icons {
   }
 }
 section {
-  padding: 90px 40px 40px;
+  padding: 90px 0px 40px;
 }
 section p {
   text-align: right;
+  color: #000;
+  font-size: 16px;
 }
 
 .info {

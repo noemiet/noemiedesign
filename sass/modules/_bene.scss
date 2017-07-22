@@ -3,3 +3,20 @@
   top: 60%;
   left: 60%;
 }
+
+.side{
+  width: 90%;
+  padding: 50px;
+}
+
+.mood-section{
+  text-align: right;
+  h4{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase; 
+  }
+  p{
+    color: #000;
+    font-size: 16px;
+  }
+}
