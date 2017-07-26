@@ -1868,7 +1868,7 @@ section p {
   letter-spacing: .2em;
 }
 
-.btn-home, .btn-home:active, .btn-home:focus {
+.btn-home, .btn-home:active, .btn-home:focus, .btn-home:hover {
   font-family: 'bebas_neuebold', sans-serif;
   font-size: 1.5em;
   background-color: transparent;
@@ -1992,7 +1992,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  background: url(../img/home/right-tgs.jpg) no-repeat center center;
+  /*  background: url(../img/home/right-tgs.jpg) no-repeat center center; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2128,7 +2128,7 @@ body {
 }
 
 #section07 a {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 #section07 a span {
