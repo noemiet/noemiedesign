@@ -17,6 +17,11 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 
+.menu-tag {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+}
+
 #label {
   position: absolute;
   margin: auto;
@@ -79,51 +84,6 @@
   left: 20px;
 }
 
-/*@media (min-width: 400px) {
-
-}
-@media (min-width: 528px) {
-      .sidebar {
-            width: 300px;
-      }
-      .sidebar.sidebar-left{
-            left:0px;
-            right:auto;
-      }
-
-      .sidebar.sidebar-right{
-            right:0px;
-            left:auto;
-      }
-}
-@media (min-width: 768px) {
-      .sidebar {
-            width: 230px;
-      }
-      .sidebar.sidebar-left{
-            left:0px;
-            right:auto;
-      }
-
-      .sidebar.sidebar-right{
-            right:0px;
-            left:auto;
-      }
-}
-@media (min-width: 992px) {
-      .sidebar {
-            width: 230px;
-      }
-      .sidebar.sidebar-left{
-            left:0px;
-            right:auto;
-      }
-
-      .sidebar.sidebar-right{
-            right:0px;
-            left:auto;
-      }
-}*/
 @media (max-width: 1920px) {
   .sidebar {
     width: 190px;
@@ -139,14 +99,8 @@
     left: auto;
   }
 }
-.menu-item {
-  font-family: Oswald,sans-serif;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
 .list-group {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .toggler {
@@ -211,54 +165,13 @@
   display: none;
 }
 
-/*.sidebar .submenu{
-      display: none;
-      position: fixed;
-} 
-*/
-/*Native BootStrap Hack*/
-.sidebar .list-group-item:last-child, .sidebar .list-group-item:first-child {
-  border-radius: 0px;
-}
-
-.sidebar .list-group {
-  margin-bottom: 0px;
-}
-
-.sidebar .list-group-item {
-  /*  padding: 5px;
-    border: 1px solid #DDD;
-    border-left: 0px;
-    border-right: 0px;*/
-  margin-bottom: 0px;
-  margin-top: -1px;
-}
-
-a.list-group-item:hover {
-  color: #C7CECB !important;
-  text-decoration: none !important;
-  background-color: #fff;
-}
-
-.list-group-item {
-  border: none;
-  padding: 1px 15px;
-}
-
-.list-group-item.active, .list-group-item.active:focus {
-  z-index: 0;
-  color: #C7CECB !important;
-  text-decoration: none !important;
-  background-color: #fff;
-}
-
-.sidebar .list-group > a {
-  border: none;
-  padding: 5px 30px;
-  font-family: 'Open Sans', sans-serif;
+.menu-item {
+  font-family: 'bebas_neuebold', sans-serif;
   color: #000;
-  position: relative;
-  display: block;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif !important;
 }
 
 .sidebar .list-group > a:hover {
@@ -267,27 +180,21 @@ a.list-group-item:hover {
   background-color: #fff;
 }
 
-.list-group > a {
+.list-group a {
   border: none;
   padding: 5px 30px;
-  font-family: 'Open Sans', sans-serif;
-  color: #000;
   position: relative;
   display: block;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
-.list-group > a:hover {
+.list-group a:hover {
   color: #C7CECB !important;
   text-decoration: none !important;
   background-color: #fff;
 }
 
-/*.sidebar-nav a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
-  border-left: red 2px solid;
-}*/
 .sidebar-nav a:active,
 .sidebar-nav a:focus {
   text-decoration: none;
