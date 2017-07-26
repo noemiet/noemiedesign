@@ -17,9 +17,18 @@
   font-style: italic;
   letter-spacing: .2em;
 }
-.btn-home{
+.btn-home, .btn-home:active, .btn-home:focus {
   font-family: 'bebas_neuebold', sans-serif;
   font-size: 1.5em;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+ .btn-home:active{
+    font-family: 'bebas_neuebold', sans-serif;
+  font-size: 1.5em;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .navbar-toggle {
@@ -91,6 +100,7 @@ body{
     display:flex;
   }
 }
+
 .left-chill{
   display : none;
   justify-content : center;
@@ -110,7 +120,22 @@ body{
   display : none;
   justify-content : center;
   align-items : center;
-  background: url(../img/home/gather.jpg) no-repeat center center; 
+  background: url(../img/home/left-tgs.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height : 100%;
+  color : #FFF;
+  &:target{
+    display:flex;
+  }
+}
+.g-s{
+  display : none;
+  justify-content : center;
+  align-items : center;
+  background: url(../img/home/right-tgs.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -200,11 +225,13 @@ body{
   text-align: center;
   padding: 0px 50px;
   p{
-    color: #000;
     font-size: 16px;
     margin: 10px 30px;
   }
 }
+/*.b-s{
+  background-color: #BDCAC9;
+}*/
 
 #section02 a {
   padding-top: 60px;

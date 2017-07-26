@@ -545,8 +545,8 @@ h1 {
 
 h2 {
   font-family: 'bebas_neuebold', sans-serif;
-  font-size: 4rem;
-  line-height: 3rem;
+  font-size: 9rem;
+  /* line-height: 3rem;*/
 }
 
 h3 {
@@ -558,6 +558,7 @@ h3 {
 p {
   font-family: 'Cormorant Garamond', serif;
   text-transform: none;
+  /*  color: #6D6E71;*/
 }
 
 .rok-label {
@@ -598,10 +599,6 @@ p {
   transition: all .2s ease-in-out;
   padding: 10px;
 }*/
-p {
-  color: #6D6E71;
-}
-
 .back h1 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -1871,9 +1868,18 @@ section p {
   letter-spacing: .2em;
 }
 
-.btn-home {
+.btn-home, .btn-home:active, .btn-home:focus {
   font-family: 'bebas_neuebold', sans-serif;
   font-size: 1.5em;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-home:active {
+  font-family: 'bebas_neuebold', sans-serif;
+  font-size: 1.5em;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .navbar-toggle {
@@ -1970,7 +1976,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  background: url(../img/home/gather.jpg) no-repeat center center;
+  background: url(../img/home/left-tgs.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1979,6 +1985,22 @@ body {
   color: #FFF;
 }
 .left-tgs:target {
+  display: flex;
+}
+
+.g-s {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/home/right-tgs.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  color: #FFF;
+}
+.g-s:target {
   display: flex;
 }
 
@@ -2067,11 +2089,13 @@ body {
   padding: 0px 50px;
 }
 .blurb p {
-  color: #000;
   font-size: 16px;
   margin: 10px 30px;
 }
 
+/*.b-s{
+  background-color: #BDCAC9;
+}*/
 #section02 a {
   padding-top: 60px;
 }
