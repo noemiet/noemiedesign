@@ -103,16 +103,17 @@
     <li class="visible-xs"><a href="grady">>>></a></li>
   </ul>
 </section>    <!-- JS libraries and scripts -->
-  <!--   <script src="js/src/jquery-1.11.2.min.js"></script>  -->
+
     <script src="js/src/jquery.flexslider.js"></script>
     <script src="js/src/jquery.imagesloaded.min.js"></script>
     <script src="js/src/masonry.pkgd.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
-<!--     <script src="js/src/masonry-edit.js"></script> -->
     <script src="js/src/main-1.js"></script>
-<!--     <script type="text/javascript" src="js/src/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/src/animated-masonry-gallery.js"></script>
-<script type="text/javascript" src="js/src/jquery-ui-1.10.4.min.js"></script> -->
+
+<!-- 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script> -->
+
+    <script src="js/src/animsition.js"></script>
 
     <script type="text/javascript" charset="utf-8">
 
@@ -131,58 +132,35 @@
           animationSpeed: 600, 
         });
       });
-     
+      </script>
 
-
-  //   $('.masonry-container').imagesLoaded()
-  // .always( function( instance ) {
-  //   console.log('all images loaded');
-  // })
-  // .done( function( instance ) {
-  //   console.log('all images successfully loaded');
-  // })
-  // .fail( function() {
-  //   console.log('all images loaded, at least one is broken');
-  // })
-  // .progress( function( instance, image ) {
-  //   var result = image.isLoaded ? 'loaded' : 'broken';
-  //   console.log( 'image is ' + result + ' for ' + image.img.src );
-  // });
-    </script>
-
-
-<!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
-    <script>
-$(document).ready(function () {
-  var trigger = $('.hamburger'),
-      overlay = $('.overlay'),
-     isClosed = false;
-
-    trigger.click(function () {
-      hamburger_cross();      
-    });
-
-    function hamburger_cross() {
-
-      if (isClosed == true) {          
-        overlay.hide();
-        trigger.removeClass('is-open');
-        trigger.addClass('is-closed');
-        isClosed = false;
-      } else {   
-        overlay.show();
-        trigger.removeClass('is-closed');
-        trigger.addClass('is-open');
-        isClosed = true;
-      }
-  }
-  
-  $('[data-toggle="offcanvas"]').click(function () {
-        $('#wrapper').toggleClass('toggled');
-  });  
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
 });
-</script> -->
+  </script>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
