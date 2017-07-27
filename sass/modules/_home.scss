@@ -176,6 +176,21 @@ body{
     display:flex;
   }
 }
+.left-lemons{
+  display : none;
+  justify-content : center;
+  align-items : center;
+  background: url(../img/home/lemons.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height : 100%;
+  color : #FFF;
+  &:target{
+    display:flex;
+  }
+}
 .left-reach{
   display : none;
   justify-content : center;
