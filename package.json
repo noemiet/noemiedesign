@@ -41,5 +41,10 @@
     "grunt-text-replace": "^0.4.0",
     "node-sass": "^2.1.1",
     "qunit": "^0.7.6"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "multiscroll.js": "^0.1.8",
+    "waypoints": "^4.0.1"
   }
 }

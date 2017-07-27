@@ -1617,6 +1617,10 @@ a:hover {
   font-size: 16px;
 }
 
+.email {
+  background-color: #000;
+}
+
 footer {
   margin-top: 10px;
   /* padding-bottom: 15px;*/

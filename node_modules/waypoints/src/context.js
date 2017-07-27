@@ -30,6 +30,10 @@
     element.waypointContextKey = this.key
     contexts[element.waypointContextKey] = this
     keyCounter += 1
+    if (!Waypoint.windowContext) {
+      Waypoint.windowContext = true
+      Waypoint.windowContext = new Context(window)
+    }
 
     this.createThrottledScrollHandler()
     this.createThrottledResizeHandler()
@@ -46,7 +50,8 @@
   Context.prototype.checkEmpty = function() {
     var horizontalEmpty = this.Adapter.isEmptyObject(this.waypoints.horizontal)
     var verticalEmpty = this.Adapter.isEmptyObject(this.waypoints.vertical)
-    if (horizontalEmpty && verticalEmpty) {
+    var isWindow = this.element == this.element.window
+    if (horizontalEmpty && verticalEmpty && !isWindow) {
       this.adapter.off('.waypoints')
       delete contexts[this.key]
     }
@@ -115,6 +120,9 @@
 
       for (var waypointKey in this.waypoints[axisKey]) {
         var waypoint = this.waypoints[axisKey][waypointKey]
+        if (waypoint.triggerPoint === null) {
+          continue
+        }
         var wasBeforeTriggerPoint = axis.oldScroll < waypoint.triggerPoint
         var nowAfterTriggerPoint = axis.newScroll >= waypoint.triggerPoint
         var crossedForward = wasBeforeTriggerPoint && nowAfterTriggerPoint
@@ -234,7 +242,7 @@
         }
 
         contextModifier = axis.contextScroll - axis.contextOffset
-        waypoint.triggerPoint = elementOffset + contextModifier - adjustment
+        waypoint.triggerPoint = Math.floor(elementOffset + contextModifier - adjustment)
         wasBeforeScroll = oldTriggerPoint < axis.oldScroll
         nowAfterScroll = waypoint.triggerPoint >= axis.oldScroll
         triggeredBackward = wasBeforeScroll && nowAfterScroll
@@ -288,6 +296,7 @@
     }
     Context.refreshAll()
   }
+
 
   Waypoint.requestAnimationFrame = function(callback) {
     var requestFn = window.requestAnimationFrame ||
