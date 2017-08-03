@@ -35,10 +35,6 @@
       $(document).ready(function(){
         $('#test').BootSideMenu({side:"left", autoClose:true});
         $('#test2').BootSideMenu({side:"left", autoClose:false});
-        $('#multiscroll').multiscroll({
-          anchors: ['main','bene', 'gathering', 'chill', 'journey', 'perkins', 'reach', 'grady', 'experiment'],
-        
-        });
       });
     </script>
   </head>
@@ -56,12 +52,12 @@
     <div class="navbar navbar-default navbar-fixed-left">
       <button type="button" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body" class="navbar-toggle"><span class="menu-text">menu</span></button>
     </div>
-    <main><!-- HEADER -->
+    <main class="alt-grid"><!-- HEADER -->
 <!-- <header class="full-bene">
   <h1 class="white center">Bene Scarves</h1>
 </header> -->
 <section>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-4 info">
         <h1>001</h1>

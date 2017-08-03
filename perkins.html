@@ -9,12 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="img/nt-favicon.ico">
     <!-- Basic page information -->
-    <meta name="description" content="Noemie Tshinanga, Front End Developer, Photograper | Stay uncomfortable, folks">
+    <meta name="description" content="Perkins+Will: Build web applications for internal using various scripting languages and JavaScript frameworks such as Ruby and Angular, in addition to utilizing web template engines such as Jade">
     <meta name="keywords" content="noemie, tshinanga, design, atlanta">
     <meta name="author" content="Noemie Tshinanga">
-    <meta property="og:image" content="http://noemietshinanga.com/img/noemiet.jpg">
+    <meta property="og:image" content="http://noemietshinanga.com/img/pw/pw-main.jpg">
     <meta property="og:title" content="Noemie Tshinanga">
-    <meta property="og:url" content="http://noemietshinanga.com/">
+    <meta property="og:url" content="http://noemietshinanga.com/perkins">
     <!-- Custom Google fonts-->
     <link href="fonts/bebas/stylesheet.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
@@ -25,40 +25,58 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet">
     <!--Main CSS Style-->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/node_modules/multiscroll.js/jquery.multiscroll.css">
     <link href="css/global.css" rel="stylesheet">
-    <link href="css/animsition.css" rel="stylesheet">
     <!--jquery-->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/node_modules/multiscroll.js/jquery.multiscroll.js"></script>
-    <script src="/node_modules/multiscroll.js/vendors/jquery.easings.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </script>
     <script src="js/src/bootsidemenu.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $('#test').BootSideMenu({side:"left", autoClose:true});
         $('#test2').BootSideMenu({side:"left", autoClose:false});
-        $('#multiscroll').multiscroll({
-          anchors: ['main','bene', 'gathering', 'chill', 'journey', 'perkins', 'lemons', 'reach', 'grady', 'experiment'],
-        
-        });
       });
     </script>
   </head>
-  <body>
-    <div id="test" class="sidebar-nav">
-      <div class="list-group"><a href="#" class="sidebar-brand"> <img src="/img/sym-black.png"></a><a href="http://noemietshinanga.com/work/">Design</a><a href="http://noemietshinanga.com/work/">Web</a><a href="http://noemietshinanga.com/work/">Video</a><a href="about">About Me</a><a href="http://www.noemie-marguerite.com/" target="_blank">Photography</a><a href="https://lookandfeelblog.tumblr.com/" target="_blank">Style</a>
-        <div class="social-links"><a href="https://instagram.com/noemiemarguerite/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a><a href="https://twitter.com/noemietshinanga" target="_blank"><i class="fa fa-twitter fa-2x"></i></a><a href="https://vimeo.com/noemiet" target="_blank"><i class="fa fa-vimeo fa-2x"></i></a></div>
+  <body class="animsition">
+    <div id="myNavmenu" class="sidebar-nav navmenu-fixed-left offcanvas">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg1-12">
+          <div class="list-group"><a class="title">work</a><a href="bene.html" class="menu-item animsition-link">001: Bene Scarves <span class="menu-tag"> Branding, Visual Design, Web Development</span></a><a href="tgs" class="menu-item">002: The Gathering Spot <span class="menu-tag"> Photography, Videography </span></a><a href="chill" class="menu-item">003: Chill Out <span class="menu-tag"> UX/UI Design, Mobile Development</span></a><a href="journey" class="menu-item">004: The Journey With Blue <span class="menu-tag"> Web Design, Photography, Videography</span></a><a href="perkins" class="menu-item">005: Perkins + Will <span class="menu-tag"> UX/UI Design, Web Development</span></a><a href="tgs" class="menu-item">006: Cooking With Lemons<span class="menu-tag"> Branding, Photography, Videography</span></a><a href="reach" class="menu-item">007: Reach <span class="menu-tag"> UX/UI Design, Web Development</span></a><a href="grady" class="menu-item">008: Grady <span class="menu-tag"> Logo Design</span></a><a href="experiment" class="menu-item">009: The Experiment <span class="menu-tag"> Videography</span></a><a href="about" class="title">about noemie tshinanga</a>
+          </div>
+          <div class="list-group"><a class="title">outside links</a><a href="http://www.noemie-marguerite.com/" target="_blank" class="menu-item">Noemie-Marguerite <span class="menu-tag">photography portfolio</span></a><a href="https://lookandfeelblog.tumblr.com/" target="_blank" class="menu-item">Videography <span class="menu-tag">self explanatory</span></a><a href="https://lookandfeelblog.tumblr.com/" target="_blank" class="menu-item">The Art Cycle <span class="menu-tag">i sell graphic tees</span></a><a href="https://lookandfeelblog.tumblr.com/" target="_blank" class="menu-item">Look &amp; Feel <span class="menu-tag">Fashion Blog</span>
+              <div class="social-links"><a href="https://instagram.com/noemiemarguerite/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a><a href="https://twitter.com/noemietshinanga" target="_blank"><i class="fa fa-twitter fa-2x"></i></a><a href="https://vimeo.com/noemiet" target="_blank"><i class="fa fa-vimeo fa-2x"></i></a></div></a></div>
+        </div>
       </div>
     </div>
-    
-    
-    
+    <div class="navbar navbar-default navbar-fixed-left">
+      <button type="button" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body" class="navbar-toggle"><span class="menu-text">menu</span></button>
+    </div>
     <main class="alt-grid"><!-- HEADER -->
 <!-- <header class="full-perkins">
 </header>
  -->
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 info">
+        <h1>005</h1>
+        <h3>Perkins+Will</h3>
+        <ul class="tags">
+          <span class="label">Role</span></br>
+            <li>Brand/Identity</li> 
+            <li>Web Design</li> 
+            <li>Email Marketing</li>
+            <li>Print Materials</li>
+          </ul>
+      </div>
+      <div class="col-md-5 col-md-offset-3">
+        <p>I conceptualized and developed the visual brand and identity of Bene Scarves. I've developed web pages using HTML and CSS that effectively depict the overall brand. Using Shopify as a CMS, I've customized Shopify's theme to fit Bene Scarves' brand with liquid documentation. Designed branding print materials such as business cards, press kits, and hangtags.</p>
+      </div>
+    </div>
+  </div>
+</section>
 <div class="container-fluid pn">
   <img src="/../img/pw/pw-main.jpg" class="img-responsive">
 </div>
